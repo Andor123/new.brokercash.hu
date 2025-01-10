@@ -1,0 +1,70 @@
+@import url('presets.css');
+
+.blog-title {
+    font-size: 30px;
+    position: relative;
+    padding: 20px 30px 15px 15px;
+    margin-top: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+#blog-page {
+    background: #ecf0f1;
+}
+
+#blog-page .post {
+    background: #FFF;
+    padding: 20px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+#blog-page .widget {
+    background: #FFF none repeat scroll 0% 0%;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+#blog-page .widget ul li {
+    padding: 5px 0;
+    list-style: none;
+}
+
+#blog-page .widget-title {
+    position: relative;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: #666;
+    font-family: Lovelo;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+#blog-page .widget-title::before {
+    position: absolute;
+    border-color: #f60 !important;
+    content: " ";
+    width: 25px;
+    bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 2px solid;
+}
+
+#blog-page .center {
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+@import url('presets.css');
+
+#consentBox {
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0px 0px 15px #ccc;
+    padding: 5px 10px;
+    text-align: center;
+    z-index: 9999;
+}
+
+#consentContent p {
+    color: #858585;
+    margin: 10px 0 20px 0;
+}
+
+#consentContent .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.consentButton,
+.rejectButton {
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.consentButton {
+    background: var(--preset);
+    margin-right: 10px;
+}
+
+.rejectButton {
+    color: var(--preset);
+    background: transparent;
+    border: 2px solid var(--preset);
+    text-decoration: none;
+}
+
+.rejectButton:hover {
+    color: var(--preset);
+}
+
+#consentBox img {
+    max-width: 175px;
+}
+
+#consentHeader {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+}

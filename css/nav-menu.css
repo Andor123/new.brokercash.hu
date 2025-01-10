@@ -1,0 +1,148 @@
+@import url('presets.css');
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar li {
+    color: #666;
+}
+
+.navbar-plain.affix {
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+    box-shadow: 0 0 3px rgba(000, 000, 000, .2);
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.navbar-plain.affix .navbar-brand {
+    padding: 10px 15px;
+    height: 54px;
+}
+
+.navbar-plain.affix .navbar-brand img {
+    width: 225px;
+}
+
+.navbar-plain {
+    border: none;
+    border-radius: 0;
+    background: #fff;
+}
+
+.navbar-plain .navbar-brand {
+    width: 336px;
+    height: auto;
+    padding: 11px;
+}
+
+.navbar-plain .navbar-brand img {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    width: 325px;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:focus {
+    font-size: 14px;
+    padding: 5px 0;
+    margin: 3px 15px 0;
+    outline: 0;
+    color: #666;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: transparent;
+}
+
+.navbar-nav li a {
+    background: transparent;
+    padding-bottom: 5px;
+    color: #666;
+    position: relative;
+}
+
+.navbar-nav li a::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 1px;
+    bottom: 4px;
+    -webkit-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -moz-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    -o-transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+.navbar-nav li a:hover {
+    text-shadow: none;
+}
+
+.navbar-nav li .nav-link:hover::before {
+    width: 15px;
+}
+
+.navbar-nav li .dropdown-item:active {
+    background: transparent !important;
+}
+
+.navbar-nav .dropdown-menu.show {
+    display: block;
+    -webkit-animation: fadeInUpMenu 0.2s;
+    -moz-animation: fadeInUpMenu 0.2s;
+    -ms-animation: fadeInUpMenu 0.2s;
+    -o-animation: fadeInUpMenu 0.2s;
+    animation: fadeInUpMenu 0.2s;
+}
+
+@-webkit-keyframes fadeInUpMenu {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpMenu {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown .dropdown-menu {
+    padding: 0;
+    border-style: solid;
+    border-width: 4px 0 0;
+    border-radius: 0;
+}
+
+.dropdown .dropdown-menu li a {
+    font-size: 12px;
+    display: block;
+    height: auto;
+    padding: 12px 20px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}

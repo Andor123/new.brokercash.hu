@@ -1,0 +1,415 @@
+@import url('presets.css');
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 800px;
+    }
+
+    #roof .social-links {
+        display: none;
+    }
+}
+
+@media (min-width: 610px) and (max-width: 795px) {
+    .navbar-collapse {
+        width: 495px;
+    }
+
+    #roof .social-links {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    #carousel .carousel-item .carousel-caption h2 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar-collapse {
+        width: 528px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .page-header .page-title {
+        font-size: 32px;
+    }
+
+    .small-title {
+        font-size: 20px;
+    }
+
+    .social-links-bordered a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    #roof .quick-contacts span {
+        padding: 0 10px;
+    }
+
+    #roof .quick-contacts span.info {
+        padding: 0 5px;
+    }
+
+    #roof .social-links a {
+        margin: 0 20px;
+    }
+
+    .navbar-plain .navbar-nav li a,
+    .navbar-plain .navbar-nav li a:focus,
+    .navbar-plain.affix .navbar-nav li a,
+    .navbar-plain.affix .navbar-nav li a:focus {
+        font-size: 12px;
+        padding: 0;
+        margin: 5px 8px;
+    }
+
+    .navbar-plain .dropdown .dropdown-menu li a,
+    .navbar-plain .dropdown .dropdown-menu li a:focus,
+    .navbar-plain.affix .dropdown .dropdown-menu li a,
+    .navbar-plain.affix .dropdown .dropdown-menu li a:focus {
+        padding: 7px 15px;
+        margin: 0;
+    }
+
+    .navbar-plain .navbar-brand,
+    .navbar-plain.affix .navbar-brand {
+        width: 236px;
+    }
+
+    .navbar-plain .navbar-brand img,
+    .navbar-plain.affix .navbar-brand img {
+        width: 225px;
+    }
+
+    .navbar-plain .dropdown-menu li a,
+    .navbar-plain.affix .dropdown-menu li a {
+        font-size: 12px;
+    }
+
+    .navbar-nav {
+        grid-template-columns: auto auto auto;
+    }
+
+    #carousel .carousel-item .carousel-caption h2 {
+        font-size: 50px;
+    }
+
+    #carousel .carousel-item .carousel-caption h3 {
+        font-size: 20px;
+        top: 20%;
+    }
+
+    #carousel .carousel-item .carousel-caption .btn-group {
+        top: 20%;
+    }
+
+    #carousel .carousel-item .carousel-caption .btn {
+        margin: 10px;
+    }
+
+    #carousel .carousel-control-next-icon,
+    #carousel .carousel-control-prev-icon {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+
+    #carousel .carousel-control-next-icon i::before,
+    #carousel .carousel-control-prev-icon i::before {
+        position: absolute;
+        top: 17.5%;
+        left: 15%;
+        font-size: 24px;
+    }
+
+    #service-block .service-item {
+        margin: 60px 0;
+    }
+
+    #service-block .service-item h2 {
+        font-size: 24px;
+    }
+
+    #progress .progress-item {
+        margin: 30px 0;
+    }
+
+    footer .footer-widget {
+        margin: 30px 0;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .section-title {
+        font-size: 36px;
+    }
+
+    .page-header .page-title {
+        font-size: 24px;
+    }
+
+    #carousel .carousel-item .carousel-caption h2 {
+        font-size: 30px;
+    }
+
+    #carousel .carousel-item .carousel-caption h3 {
+        font-size: 18px;
+        top: 20%;
+    }
+
+    #carousel .carousel-item .carousel-caption .btn-group {
+        top: 20%;
+    }
+
+    #carousel .carousel-item .carousel-caption .btn {
+        margin: 5px;
+    }
+
+    #carousel .carousel-control-next-icon,
+    #carousel .carousel-control-prev-icon {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+
+    #carousel .carousel-control-next-icon i::before,
+    #carousel .carousel-control-prev-icon i::before {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        font-size: 24px;
+    }
+
+    #service-block .service-item {
+        margin: 60px 0;
+    }
+
+    #service-block .service-item h2 {
+        font-size: 24px;
+    }
+
+    #progress .progress-item {
+        margin: 30px 0;
+    }
+
+    #clients #clients-scroller img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .section-title {
+        font-size: 26px;
+        line-height: 45px;
+    }
+
+    .section-title::before {
+        display: none;
+    }
+
+    .page-header .page-title {
+        font-size: 22px;
+    }
+
+    .small-title {
+        font-size: 25px;
+    }
+
+    .social-links-bordered a i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .page-header {
+        min-height: 90px;
+    }
+
+    .page-header .page-title {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #roof .quick-contacts span {
+        padding: 0 10px;
+    }
+
+    #roof .quick-contacts span.info {
+        padding: 0 5px;
+    }
+
+    #roof .social-links a {
+        margin: 0 2px;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .section-title + .row {
+        padding: 0 0 30px;
+    }
+
+    .navbar-plain .navbar-nav li a,
+    .navbar-plain .navbar-nav li a:focus,
+    .navbar-plain.affix .navbar-nav li a,
+    .navbar-plain.affix .navbar-nav li a:focus {
+        font-size: 14px;
+        padding: 0;
+        margin: 22px 11px;
+    }
+
+    .navbar-plain .navbar-nav::before,
+    .navbar-plain.affix .navbar-nav::before {
+        bottom: 0;
+    }
+
+    .navbar-plain .dropdown .dropdown-menu,
+    .navbar-plain.affix .dropdown .dropdown-menu {
+        border: 0;
+        background: #ecf0f1;
+    }
+
+    .navbar-plain .dropdown .dropdown-menu li a,
+    .navbar-plain.affix .dropdown .dropdown-menu li a {
+        color: #666;
+    }
+
+    .navbar-plain .dropdown .dropdown-menu li a:hover,
+    .navbar-plain.affix .dropdown .dropdown-menu li a:hover {
+        background: var(--preset);
+        color: #fff;
+    }
+
+    .navbar-plain .navbar-brand,
+    .navbar-plain.affix .navbar-brand {
+        width: 236px;
+    }
+
+    .navbar-plain .navbar-brand img,
+    .navbar-plain.affix .navbar-brand img {
+        width: 225px;
+    }
+
+    .navbar-nav {
+        grid-template-columns: auto;
+    }
+
+    .dropdown .dropdown-menu {
+        padding: 0;
+        border-style: solid;
+        border-width: 4px 0 0 0;
+        border-radius: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .dropdown .dropdown-menu li a {
+        color: #666;
+        padding: 10px 0 10px 15px;
+        margin: 5px 0;
+    }
+
+    #carousel .carousel-item .carousel-caption {
+        padding-top: 0;
+        left: 5%;
+        right: 5%;
+    }
+
+    #carousel .carousel-item .carousel-caption h2 {
+        font-size: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+        top: 12%;
+    }
+
+    #carousel .carousel-item .carousel-caption h3 {
+        font-size: 17px;
+        background: rgba(0, 0, 0, 0.3);
+        top: 20%;
+    }
+
+    #carousel .carousel-item .carousel-caption .btn {
+        margin: 5px;
+        padding: 7px 15px;
+    }
+
+    #carousel .carousel-item .carousel-caption .btn-group {
+        top: 20%;
+    }
+
+    #carousel .carousel-control-next-icon,
+    #carousel .carousel-control-prev-icon {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+
+    #carousel .carousel-control-next-icon i::before,
+    #carousel .carousel-control-prev-icon i::before {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        font-size: 24px;
+    }
+
+    #carousel .left.carousel-control {
+        left: 2%;
+    }
+
+    #carousel .right.carousel-control {
+        right: 2%;
+    }
+
+    #carousel .carousel-indicators {
+        display: none;
+    }
+
+    #service-block .service-item {
+        margin: 60px 0;
+    }
+
+    #service-block .service-item h2 {
+        font-size: 24px;
+    }
+
+    #progress .progress-item {
+        margin: 30px 0;
+    }
+
+    #clients #clients-scroller img {
+        width: 50%;
+    }
+
+    footer .footer-widget {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .open-quick-box,
+    .quick-call {
+        left: -40px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .open-quick-box i,
+    .quick-call i {
+        line-height: 40px;
+        font-size: 25px;
+    }
+}

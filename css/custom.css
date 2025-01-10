@@ -1,0 +1,540 @@
+@import url('presets.css');
+
+#roof {
+    background: #333;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+#roof .row {
+    padding: 0;
+}
+
+.quick-contacts span {
+    padding: 0 15px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.quick-contacts i {
+    margin-right: 5px;
+}
+
+.quick-contacts a {
+    color: #fff;
+}
+
+.quick-contacts a:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    text-shadow: none;
+}
+
+#copyright {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ecf0f1;
+}
+
+#copyright .row {
+    padding: 30px 0;
+}
+
+#copyright .copyright-text {
+    margin-top: 15px;
+}
+
+footer {
+    background: #f8f8f8;
+    border-top: 2px solid #eee;
+    color: #999;
+}
+
+footer .bi-twitter-x:hover,
+footer .bi-facebook:hover {
+    color: #fff;
+}
+
+footer .bi-twitter-x {
+    color: #000;
+}
+
+footer .bi-facebook {
+    color: #1778f2;
+}
+
+footer img {
+    width: 50%;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer ul li {
+    line-height: 25px;
+}
+
+footer .nav-link {
+    color: #999;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+footer li.tweet {
+    margin-bottom: 5px;
+}
+
+#team-block .team-member {
+    padding-bottom: 15px;
+    margin-top: 20px;
+    border-bottom: 5px solid transparent;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    background: #666;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    display: block;
+}
+
+#team-block .team-member .face {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#team-block .team-member .face img {
+    width: 100%;
+    height: auto;
+}
+
+#team-block .team-member .member-info {
+    text-align: center;
+    padding: 24px;
+}
+
+#team-block .team-member .member-info .position {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#team-block .team-member .member-info .desc {
+    margin-top: 15px;
+    color: #ecf0f1;
+}
+
+#team-block .team-member:hover {
+    border-color: var(--preset);
+    background: #777;
+}
+
+#progress {
+    color: #666;
+}
+
+#progress .icon-effect {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+#progress .icon-effect::after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: "";
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+#progress .progress-inner {
+    position: relative;
+    color: #666;
+}
+
+#progress .progress-inner::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+}
+
+#progress .our-progress {
+    position: relative;
+}
+
+#progress .our-progress::before {
+    background: none;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 20px;
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 200px;
+    background-position: center;
+}
+
+#progress h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#progress .section-title {
+    color: #666;
+}
+
+#progress .progress-item .icon-effect {
+    box-shadow: 0 0 0 3px var(--preset);
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+#progress .progress-item .icon-effect i {
+    font-size: 2.5em;
+}
+
+#progress .progress-item .icon-effect::after {
+    top: -2px;
+    left: -2px;
+    padding: 2px;
+    z-index: -1;
+    background: var(--preset);
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -webkit-transform 0.2s, opacity 0.2s;
+    transition: -webkit-transform 0.2s, opacity 0.2s;
+}
+
+#progress .progress-item:hover .icon-effect::after {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.4s, opacity 0.2s;
+    -moz-transition: -webkit-transform 0.4s, opacity 0.2s;
+    transition: -webkit-transform 0.4s, opacity 0.2s;
+}
+
+#progress .progress-item:hover .icon-effect {
+    color: var(--preset);
+}
+
+#progress .row {
+    padding: 30px 0 35px;
+}
+
+#clients #clients-scroller {
+    text-align: center;
+}
+
+#clients #clients-scroller .client-item-wrapper {
+    display: inline-block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#clients #clients-scroller img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+#clients #clients-scroller img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+#content-container .the-company {
+    padding-top: 20px;
+}
+
+#other-quick-loan form,
+#partner-form form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-check-input:checked {
+    background-color: var(--preset);
+    border-color: var(--preset);
+}
+
+#contact .contact-info-wrapper {
+    margin-top: -10px;
+}
+
+#contact .contact-info-wrapper .contact-item-wrapper {
+    padding: 15px 30px;
+}
+
+#contact .contact-info-wrapper .contact-item-wrapper.preset-bg {
+    background: var(--preset);
+}
+
+#contact .contact-info-wrapper .contact-item-wrapper.dark-bg {
+    background: rgba(0, 0, 0, .3);
+}
+
+#contact .contact-info-wrapper .contact-item-wrapper h4 {
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+}
+
+#contact .contact-info-wrapper .contact-item-wrapper i {
+    color: #fff;
+    padding-right: 10px;
+    font-size: 24px;
+}
+
+.form-step-header {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    clear: both;
+    border: 0px solid #CCCCCC;
+    background: transparent;
+}
+
+.form-step-header li {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 0px solid #E0E0E0;
+}
+
+.form-step-header li a {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 3px;
+    height: 60px;
+    width: 250px !important;
+    text-decoration: none;
+    outline-style: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 99;
+    color: #CCCCCC;
+    background: #F8F8F8;
+    border: 1px solid #CCC;
+    cursor: text;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.form-step-header li a:hover {
+    color: #CCCCCC;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.form-step-header li a.active {
+    color: #F8F8F8 !important;
+    background: #EA8511 !important;
+    border: 1px solid #EA8511 !important;
+    cursor: text;
+    -webkit-box-shadow: 5px 5px 8px #888;
+    -moz-box-shadow: 5px 5px 8px #888;
+    box-shadow: 5px 5px 8px #888;
+}
+
+.form-step-header .stepNumber {
+    position: relative;
+    float: left;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 6px;
+    padding-top: 0;
+    font: bold 45px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.form-step-header .stepDesc {
+    position: relative;
+    float: left;
+    text-align: left;
+    padding: 5px;
+    font: bold 17px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.form-step-header small {
+    font: normal 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.genericForm #msgSubmit {
+    margin-top: 35px;
+}
+
+.genericForm #msgSubmit3 {
+    color: #fff;
+}
+
+.genericForm .withTrigger {
+    position: relative;
+}
+
+.genericForm .triggerText {
+    position: absolute;
+    top: .75em;
+    color: #666;
+    right: 10%;
+}
+
+.quick-menu-box {
+    text-align: center;
+
+}
+
+.quick-menu-box .blog-title {
+    padding: 0;
+    font-size: 18px;
+    margin: 0;
+}
+
+.quick-menu-box .quick-contact-content p {
+    text-align: left;
+    margin: 5px 0;
+}
+
+.quick-menu-box .quick-contact-content i {
+    margin-right: 10px;
+}
+
+.quick-menu-box .btn-primary {
+    font-size: 14px;
+    margin-top: 1.4em;
+}
+
+#content-container ul {
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+#content-container ul li {
+    list-style: inherit;
+}
+
+.admin-page-header {
+    padding: 10px;
+}
+
+.admin-page-header-inner p {
+    text-align: center;
+}
+
+.admin-page-header-inner .section-title {
+    padding: 15px 0;
+}
+
+#home .section-title.load-hidden,
+#home .service-item.load-hidden,
+#home .team-member.load-hidden,
+#home .progress-item.load-hidden,
+#home .client-item-wrapper.load-hidden,
+.footer-widget.load-hidden {
+    visibility: hidden;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+}
+
+.help-block {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+    font-weight: 700;
+}
+
+.has-error {
+    color: #a94442;
+}
+
+.hidden {
+    display: none;
+}
+
+.calculator-result-container {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-family: Roboto, sans-serif;
+}
+
+.calculator-result-container .calculator-result-content {
+    bottom: 0;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    overflow: visible;
+    max-width: 600px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.calculator-result-container .calculator-result-content .bi-x {
+    position: absolute;
+    top: -25px;
+    right: 26px;
+    left: auto;
+    background-color: #eee;
+    border-radius: 25%;
+    padding: 3px;
+    font-size: 1.8em;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.calculator-result-container .calculator-result-content .calculator-result-scroller {
+    overflow-y: scroll;
+    height: 80%;
+}
+
+.calculator-result-container .bottom-text {
+    background: #fff;
+}
+
+.navbar-nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}

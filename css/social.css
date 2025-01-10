@@ -1,0 +1,41 @@
+.social-links-bordered {
+    margin-top: 30px;
+}
+
+.social-links-bordered a {
+    display: inline-block;
+    margin-right: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.social-links-bordered i {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: middle;
+    border-radius: 100%;
+    line-height: 48px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    border: 2px solid #fff;
+}
+
+.social-links-bordered i:hover {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.bi-twitter-x:hover {
+    background: #000;
+    border-color: #000;
+}
+
+.bi-facebook:hover {
+    background: #1778f2;
+    border-color: #1778f2;
+}

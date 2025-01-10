@@ -1,0 +1,37 @@
+@import url('presets.css');
+
+#service-block .icon-wrapper {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position-x: center;
+    width: 300px;
+    margin: auto;
+}
+
+#service-block .btn {
+    margin-top: 15px;
+}
+
+#service-block .service-item h2 {
+    margin: 20px 0;
+    opacity: 0.7;
+    font-size: 24px;
+    font-family: Lovelo;
+}
+
+#service-block .service-item:hover h2 {
+    color: var(--preset);
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+#service-block .service-item:hover .icon-wrapper::before {
+    background: var(--preset);
+    opacity: 1;
+}
+
+#service-block .service-item:hover .icon-wrapper::after {
+    background: var(--preset);
+    opacity: 1;
+}

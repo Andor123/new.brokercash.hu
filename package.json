@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "codemirror": "^5.65.17",
+    "froala-editor": "^4.3.0"
+  }
+}
