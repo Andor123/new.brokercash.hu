@@ -140,7 +140,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
             $headers = "";
             $headers .= "From: info@brokercash.hu\r\n";
             $headers .= "Reply-To: " . $igenylo_email . "\r\n";
-            $headers .= "Cc: info@brokercash.hu\r\n";
+            $headers .= "Cc: info@brokercash.hu, mariann.cseke@brokercash.hu, orsi.kiss@brokercash.hu\r\n";
             $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
             $mail_status = "";
