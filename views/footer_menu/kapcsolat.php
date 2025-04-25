@@ -22,7 +22,7 @@ include('views/navigation.php');
                     <h3 class="small-title">Kérdése van? Küldjön nekünk üzenetet</h3>
                     <div class="genericForm">
                         <div class="post">
-                            <form method="post" action="" name="kapcsolat" id="kapcsolat" class="shake">
+                            <form method="post" action="" name="kapcsolat" id="kapcsolat" class="shake" enctype="multiple/form-data">
                                 <div class="mb-3">
                                     <input type="name" class="form-control radius-input" id="nev" name="nev" placeholder="Név*" required />
                                 </div>
@@ -34,6 +34,9 @@ include('views/navigation.php');
                                 </div>
                                 <div class="mb-3">
                                     <textarea rows="11" class="form-control flat-input" id="uzenet" name="uzenet" placeholder="Üzenet"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="file" class="form-control radius-input" id="dokumentum" name="dokumentum" placeholder="Dokumentum" />
                                 </div>
                                 <button type="button" class="btn btn-primary" id="submit" form="kapcsolat" onclick="kapcsolatForm()">Küldés</button>
                                 <div id="msgSubmit"></div>

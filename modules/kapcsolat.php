@@ -4,28 +4,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     $telefon = mysqli_real_escape_string($connection, $_POST['telefon']);
     $email = mysqli_real_escape_string($connection, $_POST['email']);
     $uzenet = mysqli_real_escape_string($connection, $_POST['uzenet']);
-
-    $create_file = fopen('kapcsolat.txt', 'w') or die("Unable to open file!");
-    $txt = "";
-    $txt .= "Név: " . $nev . "\n";
-    $txt .= "Telefon: " . $telefon . "\n";
-    $txt .= "Email: " . $email . "\n";
-    if (!empty($uzenet)) {
-        $txt .= "Üzenet: " . $uzenet . "\n";
-    }
-    $newTxt = mb_convert_encoding($txt, "ISO-8859-2", "UTF-8");
-    fwrite($create_file, $newTxt);
-    fclose($create_file);
-
-    if (dirname($_SERVER["PHP_SELF"])) {
-        $path = $_SERVER["HTTP_ORIGIN"] . dirname($_SERVER["PHP_SELF"]) . "/kapcsolat.txt";
-    } else {
-        $path = $_SERVER["HTTP_ORIGIN"] . "/kapcsolat.txt";
-    }
-
-    if (isset($path)) {
-        $dokumentum = basename($path);
-    }
+    $dokumentum = mysqli_real_escape_string($connection, $_FILES['dokumentum']['name']);
 
     if (!empty($nev) && !empty($telefon) && !empty($email)) {
         $sql = "INSERT INTO kapcsolat (nev, telefon, email, uzenet, dokumentum) 
@@ -33,7 +12,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
     }
 
-    if (!empty($nev) && !empty($telefon) && !empty($email)) {
+    /*if (!empty($nev) && !empty($telefon) && !empty($email)) {
         $to = $email;
         $subject = "Kapcsolatfelvétel";
 
@@ -71,7 +50,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         } else {
             $mail_status .= "<p>Nem sikerült elküldeni az emailt.</p>";
         }
-    }
+    }*/
 
     /*if (!empty($nev) && !empty($telefon) && !empty($email)) {
         $webhookUrl = "https://brokercash.bitrix24.com/rest/1/l05p9qmi7fkh61w0/crm.lead.add.json";
@@ -134,7 +113,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         $response = array(
             'status' => 'success',
             'html' => $html,
-            'mail_status' => $mail_status,
+            //'mail_status' => $mail_status,
             //'crm_result' => $result
         );
     } else {
