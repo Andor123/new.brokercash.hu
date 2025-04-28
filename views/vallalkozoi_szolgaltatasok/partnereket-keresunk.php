@@ -31,7 +31,7 @@ include('views/navigation.php');
                             }
                             ?>
                             <div class="genericForm">
-                                <form method="post" action="" name="partner" id="partner" class="shake">
+                                <form method="post" action="" name="partner" id="partner" class="shake" enctype="multipart/form-data">
                                     <div class="mb-3">
                                         <input type="name" class="form-control radius-input" id="nev" name="nev" placeholder="Teljes név*" required>
                                     </div>
@@ -43,6 +43,9 @@ include('views/navigation.php');
                                     </div>
                                     <div class="mb-3">
                                         <textarea rows="11" class="form-control flat-input" id="uzenet" name="uzenet" placeholder="Üzenet"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="file" class="form-control radius-input" id="dokumentum" name="dokumentum" placeholder="Dokumentum">
                                     </div>
                                     <button type="button" class="btn btn-primary" id="submit" form="partner" onclick="partnerForm()">Küldés</button>
                                     <div id="msgSubmit"></div>

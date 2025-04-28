@@ -4,33 +4,19 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     $telefon = mysqli_real_escape_string($connection, $_POST['telefon']);
     $email = mysqli_real_escape_string($connection, $_POST['email']);
     $uzenet = mysqli_real_escape_string($connection, $_POST['uzenet']);
-
-    $create_file = fopen('partner.txt', 'w') or die("Unable to open file!");
-    $txt = "";
-    $txt .= "Név: " . $nev . "\n";
-    $txt .= "Telefon: " . $telefon . "\n";
-    $txt .= "Email: " . $email . "\n";
-    if (!empty($uzenet)) {
-        $txt .= "Üzenet: " . $uzenet . "\n";
-    }
-    $newTxt = mb_convert_encoding($txt, "ISO-8859-2", "UTF-8");
-    fwrite($create_file, $newTxt);
-    fclose($create_file);
-
-    if (dirname($_SERVER["PHP_SELF"])) {
-        $path = $_SERVER["HTTP_ORIGIN"] . dirname($_SERVER["PHP_SELF"]) . "/partner.txt";
-    } else {
-        $path = $_SERVER["HTTP_ORIGIN"] . "/partner.txt";
-    }
-
-    if (isset($path)) {
-        $dokumentum = basename($path);
-    }
+    $dokumentum = mysqli_real_escape_string($connection, $_FILES['dokumentum']['name']);
 
     if (!empty($nev) && !empty($telefon) && !empty($email)) {
         $sql = "INSERT INTO partner (nev, telefon, email, uzenet, dokumentum) 
             VALUES ('$nev', '$telefon', '$email', '$uzenet', '$dokumentum')";
         $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
+    }
+
+    if (!empty($dokumentum)) {
+        $directory = "uploads/";
+        $path = $directory . $dokumentum;
+        $tmp = $_FILES['dokumentum']['tmp_name'];
+        move_uploaded_file($tmp, $path);
     }
 
     if (!empty($nev) && !empty($telefon) && !empty($email)) {
@@ -51,7 +37,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         if (!empty($uzenet)) {
             $message .= "<p>Üzenet: " . $uzenet . "</p>";
         }
-        $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
+        if (!empty($dokumentum)) {
+            $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
+        }
         $message .= "<p>Köszönjük, hogy partneri kapcsolatot szeretne kialakítani velünk.</p>";
         $message .= "<p>Munkatársunk majd keresni fogja Önt.</p>";
         $message .= "<p>Üdvözlettel,<br><strong>Brokercash rendszer</strong></p>";

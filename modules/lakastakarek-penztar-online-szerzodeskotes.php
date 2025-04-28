@@ -51,25 +51,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         $adatvedelem = 'false';
     }
 
-    $create_file = fopen('lakastakarek.txt', 'w') or die("Unable to open file!");
-    $txt = "";
-    $txt .= "Név: " . $igenylo_nev . "\n";
-    $txt .= "Telefon: " . $igenylo_telefon . "\n";
-    $txt .= "Email: " . $igenylo_email . "\n";
-    $newTxt = mb_convert_encoding($txt, "ISO-8859-2", "UTF-8");
-    fwrite($create_file, $newTxt);
-    fclose($create_file);
-
-    if (dirname($_SERVER["PHP_SELF"])) {
-        $path = $_SERVER["HTTP_ORIGIN"] . dirname($_SERVER["PHP_SELF"]) . "/lakastakarek.txt";
-    } else {
-        $path = $_SERVER["HTTP_ORIGIN"] . "/lakastakarek.txt";
-    }
-
-    if (isset($path)) {
-        $dokumentum = basename($path);
-    }
-
     if (!empty($igenylo_nev) && !empty($igenylo_telefon) && !empty($igenylo_email) && $adatvedelem == 'true') {
             if (($befizetes !== '' || $megtakaritas !== '' || $futamido !== '' || $osszeg !== '') && 
                 (!empty($kedvezmenyezett_nev) || !empty($kedvezmenyezett_szuletesi_nev) || $kedvezmenyezett_nem !== '' || !empty($kedvezmenyezett_anyja_neve)
@@ -80,8 +61,8 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                                 VALUES ('$igenylo_nev', '$igenylo_szuletesi_nev', '$igenylo_nem', '$igenylo_anyja_neve', '$igenylo_szuletesi_hely', '$igenylo_szuletesi_ido', '$igenylo_okmany_tipus', '$igenylo_okmany_szam', '$igenylo_okmany_hatosag', '$igenylo_adoazonosito', '$igenylo_allampolgarsag', '$igenylo_lakcimkartya', '$igenylo_telefon', '$igenylo_email', '$igenylo_lakcim', '$igenylo_levelezesi_cim');
                             INSERT INTO lakastakarekpenztar_kedvezmenyezett (nev, szuletesi_nev, nem, anyja_neve, szuletesi_hely, szuletesi_ido, okmany_tipus, okmany_szam, okmany_hatosag, adoazonosito, allampolgarsag, lakcimkartya, telefon, email, lakcim, hozzatartozo) 
                                 VALUES ('$kedvezmenyezett_nev', '$kedvezmenyezett_szuletesi_nev', '$kedvezmenyezett_nem', '$kedvezmenyezett_anyja_neve', '$kedvezmenyezett_szuletesi_hely', '$kedvezmenyezett_szuletesi_ido', '$kedvezmenyezett_okmany_tipus', '$kedvezmenyezett_okmany_szam', '$kedvezmenyezett_okmany_hatosag', '$kedvezmenyezett_adoazonosito', '$kedvezmenyezett_allampolgarsag', '$kedvezmenyezett_lakcimkartya', '$kedvezmenyezett_telefon', '$kedvezmenyezett_email', '$kedvezmenyezett_lakcim', '$kedvezmenyezett_hozzatartozo');
-                            INSERT INTO lakastakarekpenztar (befizetes, megtakaritas, futamido, osszeg, igenylo_nev, kedvezmenyezett_nev, hirlevel, adatvedelem, dokumentum) 
-                                VALUES ('$befizetes', '$megtakaritas', '$futamido', '$osszeg', '$igenylo_nev', '$kedvezmenyezett_nev', '$hirlevel', '$adatvedelem', '$dokumentum')";
+                            INSERT INTO lakastakarekpenztar (befizetes, megtakaritas, futamido, osszeg, igenylo_nev, kedvezmenyezett_nev, hirlevel, adatvedelem) 
+                                VALUES ('$befizetes', '$megtakaritas', '$futamido', '$osszeg', '$igenylo_nev', '$kedvezmenyezett_nev', '$hirlevel', '$adatvedelem')";
                     $result = mysqli_multi_query($connection, $sql) or die(mysqli_error($connection));
             } else if (($befizetes == '' || $megtakaritas == '' || $futamido == '' || $osszeg == '') && 
                         (!empty($kedvezmenyezett_nev) || !empty($kedvezmenyezett_szuletesi_nev) || $kedvezmenyezett_nem !== '' || !empty($kedvezmenyezett_anyja_neve)
@@ -92,8 +73,8 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                                         VALUES ('$igenylo_nev', '$igenylo_szuletesi_nev', '$igenylo_nem', '$igenylo_anyja_neve', '$igenylo_szuletesi_hely', '$igenylo_szuletesi_ido', '$igenylo_okmany_tipus', '$igenylo_okmany_szam', '$igenylo_okmany_hatosag', '$igenylo_adoazonosito', '$igenylo_allampolgarsag', '$igenylo_lakcimkartya', '$igenylo_telefon', '$igenylo_email', '$igenylo_lakcim', '$igenylo_levelezesi_cim');
                                     INSERT INTO lakastakarekpenztar_kedvezmenyezett (nev, szuletesi_nev, nem, anyja_neve, szuletesi_hely, szuletesi_ido, okmany_tipus, okmany_szam, okmany_hatosag, adoazonosito, allampolgarsag, lakcimkartya, telefon, email, lakcim, hozzatartozo) 
                                         VALUES ('$kedvezmenyezett_nev', '$kedvezmenyezett_szuletesi_nev', '$kedvezmenyezett_nem', '$kedvezmenyezett_anyja_neve', '$kedvezmenyezett_szuletesi_hely', '$kedvezmenyezett_szuletesi_ido', '$kedvezmenyezett_okmany_tipus', '$kedvezmenyezett_okmany_szam', '$kedvezmenyezett_okmany_hatosag', '$kedvezmenyezett_adoazonosito', '$kedvezmenyezett_allampolgarsag', '$kedvezmenyezett_lakcimkartya', '$kedvezmenyezett_telefon', '$kedvezmenyezett_email', '$kedvezmenyezett_lakcim', '$kedvezmenyezett_hozzatartozo');
-                                    INSERT INTO lakastakarekpenztar (igenylo_nev, kedvezmenyezett_nev, hirlevel, adatvedelem, dokumentum) 
-                                        VALUES ('$igenylo_nev', '$kedvezmenyezett_nev', '$hirlevel', '$adatvedelem', '$dokumentum')";
+                                    INSERT INTO lakastakarekpenztar (igenylo_nev, kedvezmenyezett_nev, hirlevel, adatvedelem) 
+                                        VALUES ('$igenylo_nev', '$kedvezmenyezett_nev', '$hirlevel', '$adatvedelem')";
                             $result = mysqli_multi_query($connection, $sql) or die(mysqli_error($connection));
             } else if (($befizetes !== '' || $megtakaritas !== '' || $futamido !== '' || $osszeg !== '') && 
                         (empty($kedvezmenyezett_nev) || empty($kedvezmenyezett_szuletesi_nev) || $kedvezmenyezett_nem == '' || empty($kedvezmenyezett_anyja_neve)
@@ -102,14 +83,14 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                         || empty($kedvezmenyezett_telefon) || empty($kedvezmenyezett_email) || empty($kedvezmenyezett_lakcim) || $kedvezmenyezett_hozzatartozo == '')) {
                             $sql = "INSERT INTO lakastakarekpenztar_igenylo (nev, szuletesi_nev, nem, anyja_neve, szuletesi_hely, szuletesi_ido, okmany_tipus, okmany_szam, okmany_hatosag, adoazonosito, allampolgarsag, lakcimkartya, telefon, email, lakcim, levelezesi_cim) 
                                         VALUES ('$igenylo_nev', '$igenylo_szuletesi_nev', '$igenylo_nem', '$igenylo_anyja_neve', '$igenylo_szuletesi_hely', '$igenylo_szuletesi_ido', '$igenylo_okmany_tipus', '$igenylo_okmany_szam', '$igenylo_okmany_hatosag', '$igenylo_adoazonosito', '$igenylo_allampolgarsag', '$igenylo_lakcimkartya', '$igenylo_telefon', '$igenylo_email', '$igenylo_lakcim', '$igenylo_levelezesi_cim');
-                                    INSERT INTO lakastakarekpenztar (befizetes, megtakaritas, futamido, osszeg, igenylo_nev, hirlevel, adatvedelem, dokumentum) 
-                                        VALUES ('$befizetes', '$megtakaritas', '$futamido', '$osszeg', '$igenylo_nev', '$hirlevel', '$adatvedelem', '$dokumentum')";
+                                    INSERT INTO lakastakarekpenztar (befizetes, megtakaritas, futamido, osszeg, igenylo_nev, hirlevel, adatvedelem) 
+                                        VALUES ('$befizetes', '$megtakaritas', '$futamido', '$osszeg', '$igenylo_nev', '$hirlevel', '$adatvedelem')";
                             $result = mysqli_multi_query($connection, $sql) or die(mysqli_error($connection));
             } else {
                 $sql = "INSERT INTO lakastakarekpenztar_igenylo (nev, szuletesi_nev, nem, anyja_neve, szuletesi_hely, szuletesi_ido, okmany_tipus, okmany_szam, okmany_hatosag, adoazonosito, allampolgarsag, lakcimkartya, telefon, email, lakcim, levelezesi_cim) 
                             VALUES ('$igenylo_nev', '$igenylo_szuletesi_nev', '$igenylo_nem', '$igenylo_anyja_neve', '$igenylo_szuletesi_hely', '$igenylo_szuletesi_ido', '$igenylo_okmany_tipus', '$igenylo_okmany_szam', '$igenylo_okmany_hatosag', '$igenylo_adoazonosito', '$igenylo_allampolgarsag', '$igenylo_lakcimkartya', '$igenylo_telefon', '$igenylo_email', '$igenylo_lakcim', '$igenylo_levelezesi_cim');
-                        INSERT INTO lakastakarekpenztar (igenylo_nev, hirlevel, adatvedelem, dokumentum) 
-                            VALUES ('$igenylo_nev', '$hirlevel', '$adatvedelem', '$dokumentum')";
+                        INSERT INTO lakastakarekpenztar (igenylo_nev, hirlevel, adatvedelem) 
+                            VALUES ('$igenylo_nev', '$hirlevel', '$adatvedelem')";
                 $result = mysqli_multi_query($connection, $sql) or die(mysqli_error($connection));
             }
     }
@@ -129,7 +110,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
             $message .= "<p>Név: " . $igenylo_nev . "</p>";
             $message .= "<p>Telefonszám: " . $igenylo_telefon . "</p>";
             $message .= "<p>Email cím: " . $igenylo_email . "</p>";
-            $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
             $message .= "<p>Köszönjük, hogy lakástakarék biztosítást igényelt tőlünk.</p>";
             $message .= "<p>Munkatársunk majd keresni fogja Önt.</p>";
             $message .= "<p>Üdvözlettel,<br><strong>Brokercash rendszer</strong></p>";

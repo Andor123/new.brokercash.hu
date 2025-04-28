@@ -12,7 +12,14 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
     }
 
-    /*if (!empty($nev) && !empty($telefon) && !empty($email)) {
+    if (!empty($dokumentum)) {
+        $directory = "uploads/";
+        $path = $directory . $dokumentum;
+        $tmp = $_FILES['dokumentum']['tmp_name'];
+        move_uploaded_file($tmp, $path);
+    }
+
+    if (!empty($nev) && !empty($telefon) && !empty($email)) {
         $to = $email;
         $subject = "Kapcsolatfelvétel";
 
@@ -30,7 +37,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         if (!empty($uzenet)) {
             $message .= "<p>Üzenet: " . $uzenet . "</p>";
         }
-        $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
+        if (!empty($dokumentum)) {
+            $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
+        }
         $message .= "<p>Köszönjük, hogy kapcsolatot szeretne felvenni velünk.</p>";
         $message .= "<p>Munkatársunk majd keresni fogja Önt.</p>";
         $message .= "<p>Üdvözlettel,<br><strong>Brokercash rendszer</strong></p>";
@@ -50,7 +59,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         } else {
             $mail_status .= "<p>Nem sikerült elküldeni az emailt.</p>";
         }
-    }*/
+    }
 
     /*if (!empty($nev) && !empty($telefon) && !empty($email)) {
         $webhookUrl = "https://brokercash.bitrix24.com/rest/1/l05p9qmi7fkh61w0/crm.lead.add.json";
@@ -113,7 +122,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         $response = array(
             'status' => 'success',
             'html' => $html,
-            //'mail_status' => $mail_status,
+            'mail_status' => $mail_status,
             //'crm_result' => $result
         );
     } else {

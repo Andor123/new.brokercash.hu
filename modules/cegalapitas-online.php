@@ -40,25 +40,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         $adatvedelem = 'false';
     }
 
-    $create_file = fopen('cegalapitas.txt', 'w') or die("Unable to open file!");
-    $txt = "";
-    $txt .= "Név: " . $nev . "\n";
-    $txt .= "Telefon: " . $telefon . "\n";
-    $txt .= "Email: " . $email . "\n";
-    $newTxt = mb_convert_encoding($txt, "ISO-8859-2", "UTF-8");
-    fwrite($create_file, $newTxt);
-    fclose($create_file);
-
-    if (dirname($_SERVER["PHP_SELF"])) {
-        $path = $_SERVER["HTTP_ORIGIN"] . dirname($_SERVER["PHP_SELF"]) . "/cegalapitas.txt";
-    } else {
-        $path = $_SERVER["HTTP_ORIGIN"] . "/cegalapitas.txt";
-    }
-
-    if (isset($path)) {
-        $dokumentum = basename($path);
-    }
-
     if (!empty($nev) && !empty($email) && !empty($telefon) && $adatvedelem == 'true') {
             if ((!empty($cegnev) || !empty($szekhely) || !empty($telephely) || !empty($tevekenyseg)
                 || !empty($egyeb) || !empty($szemelyek) || !empty($torzstoke) || !empty($ceg_email)
@@ -68,8 +49,8 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                                 VALUES ('$cegnev', '$szekhely', '$telephely', '$tevekenyseg', '$egyeb', '$szemelyek', '$torzstoke', '$ceg_email', '$adozasi_forma');
                             INSERT INTO cegalapitas_kapcsolattarto (nev, email, telefon, megjegyzes) 
                                 VALUES ('$kapcsolattarto_nev', '$kapcsolattarto_email', '$kapcsolattarto_telefon', '$megjegyzes');
-                            INSERT INTO cegalapitas (nev, email, telefon, szuletesi_nev, lakcim, anyja_neve, szuletesi_hely, szuletesi_ido, igazolvany_szam, lakcimkartya, szemelyi_szam, adoazonosito, cegnev, kapcsolattarto_nev, hirlevel, adatvedelem, dokumentum) 
-                                VALUES ('$nev', '$email', '$telefon', '$szuletesi_nev', '$lakcim', '$anyja_neve', '$szuletesi_hely', '$szuletesi_ido', '$igazolvany_szam', '$lakcimkartya', '$szemelyi_szam', '$adoazonosito', '$cegnev', '$kapcsolattarto_nev', '$hirlevel', '$adatvedelem', '$dokumentum')";
+                            INSERT INTO cegalapitas (nev, email, telefon, szuletesi_nev, lakcim, anyja_neve, szuletesi_hely, szuletesi_ido, igazolvany_szam, lakcimkartya, szemelyi_szam, adoazonosito, cegnev, kapcsolattarto_nev, hirlevel, adatvedelem) 
+                                VALUES ('$nev', '$email', '$telefon', '$szuletesi_nev', '$lakcim', '$anyja_neve', '$szuletesi_hely', '$szuletesi_ido', '$igazolvany_szam', '$lakcimkartya', '$szemelyi_szam', '$adoazonosito', '$cegnev', '$kapcsolattarto_nev', '$hirlevel', '$adatvedelem')";
                         $result = mysqli_multi_query($connection, $sql) or die(mysqli_error($connection));
             } else if ((empty($cegnev) || empty($szekhely) || empty($telephely) || empty($tevekenyseg)
                         || empty($egyeb) || empty($szemelyek) || empty($torzstoke) || empty($ceg_email)
@@ -77,8 +58,8 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                         || !empty($megjegyzes))) {
                             $sql = "INSERT INTO cegalapitas_kapcsolattarto (nev, email, telefon, megjegyzes) 
                                         VALUES ('$kapcsolattarto_nev', '$kapcsolattarto_email', '$kapcsolattarto_telefon', '$megjegyzes');
-                                    INSERT INTO cegalapitas (nev, email, telefon, szuletesi_nev, lakcim, anyja_neve, szuletesi_hely, szuletesi_ido, igazolvany_szam, lakcimkartya, szemelyi_szam, adoazonosito, kapcsolattarto_nev, hirlevel, adatvedelem, dokumentum) 
-                                        VALUES ('$nev', '$email', '$telefon', '$szuletesi_nev', '$lakcim', '$anyja_neve', '$szuletesi_hely', '$szuletesi_ido', '$igazolvany_szam', '$lakcimkartya', '$szemelyi_szam', '$adoazonosito', '$kapcsolattarto_nev', '$hirlevel', '$adatvedelem', '$dokumentum')";
+                                    INSERT INTO cegalapitas (nev, email, telefon, szuletesi_nev, lakcim, anyja_neve, szuletesi_hely, szuletesi_ido, igazolvany_szam, lakcimkartya, szemelyi_szam, adoazonosito, kapcsolattarto_nev, hirlevel, adatvedelem) 
+                                        VALUES ('$nev', '$email', '$telefon', '$szuletesi_nev', '$lakcim', '$anyja_neve', '$szuletesi_hely', '$szuletesi_ido', '$igazolvany_szam', '$lakcimkartya', '$szemelyi_szam', '$adoazonosito', '$kapcsolattarto_nev', '$hirlevel', '$adatvedelem')";
                             $result = mysqli_multi_query($connection, $sql) or die(mysqli_error($connection));
             } else if ((!empty($cegnev) || !empty($szekhely) || !empty($telephely) || !empty($tevekenyseg)
                         || !empty($egyeb) || !empty($szemelyek) || !empty($torzstoke) || !empty($ceg_email)
@@ -86,12 +67,12 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                         || empty($megjegyzes))) {
                             $sql = "INSERT INTO cegalapitas_alapitando_ceg (cegnev, szekhely, telephely, tevekenyseg, egyeb, szemelyek, torzstoke, ceg_email, adozasi_forma) 
                                         VALUES ('$cegnev', '$szekhely', '$telephely', '$tevekenyseg', '$egyeb', '$szemelyek', '$torzstoke', '$ceg_email', '$adozasi_forma');
-                                    INSERT INTO cegalapitas (nev, email, telefon, szuletesi_nev, lakcim, anyja_neve, szuletesi_hely, szuletesi_ido, igazolvany_szam, lakcimkartya, szemelyi_szam, adoazonosito, cegnev, hirlevel, adatvedelem, dokumentum) 
-                                        VALUES ('$nev', '$email', '$telefon', '$szuletesi_nev', '$lakcim', '$anyja_neve', '$szuletesi_hely', '$szuletesi_ido', '$igazolvany_szam', '$lakcimkartya', '$szemelyi_szam', '$adoazonosito', '$cegnev', '$hirlevel', '$adatvedelem', '$dokumentum')";
+                                    INSERT INTO cegalapitas (nev, email, telefon, szuletesi_nev, lakcim, anyja_neve, szuletesi_hely, szuletesi_ido, igazolvany_szam, lakcimkartya, szemelyi_szam, adoazonosito, cegnev, hirlevel, adatvedelem) 
+                                        VALUES ('$nev', '$email', '$telefon', '$szuletesi_nev', '$lakcim', '$anyja_neve', '$szuletesi_hely', '$szuletesi_ido', '$igazolvany_szam', '$lakcimkartya', '$szemelyi_szam', '$adoazonosito', '$cegnev', '$hirlevel', '$adatvedelem')";
                             $result = mysqli_multi_query($connection, $sql) or die(mysqli_error($connection));
             } else {
-                $sql = "INSERT INTO cegalapitas (nev, email, telefon, szuletesi_nev, lakcim, anyja_neve, szuletesi_hely, szuletesi_ido, igazolvany_szam, lakcimkartya, szemelyi_szam, adoazonosito, hirlevel, adatvedelem, dokumentum) 
-                            VALUES ('$nev', '$email', '$telefon', '$szuletesi_nev', '$lakcim', '$anyja_neve', '$szuletesi_hely', '$szuletesi_ido', '$igazolvany_szam', '$lakcimkartya', '$szemelyi_szam', '$adoazonosito', '$hirlevel', '$adatvedelem', '$dokumentum')";
+                $sql = "INSERT INTO cegalapitas (nev, email, telefon, szuletesi_nev, lakcim, anyja_neve, szuletesi_hely, szuletesi_ido, igazolvany_szam, lakcimkartya, szemelyi_szam, adoazonosito, hirlevel, adatvedelem) 
+                            VALUES ('$nev', '$email', '$telefon', '$szuletesi_nev', '$lakcim', '$anyja_neve', '$szuletesi_hely', '$szuletesi_ido', '$igazolvany_szam', '$lakcimkartya', '$szemelyi_szam', '$adoazonosito', '$hirlevel', '$adatvedelem')";
                 $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
         }
     }
@@ -111,7 +92,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
             $message .= "<p>Név: " . $nev . "</p>";
             $message .= "<p>Telefonszám: " . $telefon . "</p>";
             $message .= "<p>Email cím: " . $email . "</p>";
-            $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
             $message .= "<p>Köszönjük, hogy online felületünkön szeretne céget alapítani.</p>";
             $message .= "<p>Munkatársunk majd keresni fogja Önt.</p>";
             $message .= "<p>Üdvözlettel,<br><strong>Brokercash rendszer</strong></p>";

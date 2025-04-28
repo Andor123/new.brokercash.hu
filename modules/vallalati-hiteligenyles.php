@@ -9,6 +9,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     $hitelcel = mysqli_real_escape_string($connection, $_POST['hitelcel']);
     $ingatlan = mysqli_real_escape_string($connection, $_POST['ingatlan']);
     $uzenet = mysqli_real_escape_string($connection, $_POST['uzenet']);
+    $dokumentum = mysqli_real_escape_string($connection, $_FILES['dokumentum']['name']);
 
     if (isset($_POST['adatvedelem'])) {
         $adatvedelem = mysqli_real_escape_string($connection, $_POST['adatvedelem']);
@@ -22,29 +23,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         $hirlevel = 'false';
     }
 
-    $create_file = fopen('vallalati_hiteligenyles.txt', 'w') or die("Unable to open file!");
-    $txt = "";
-    $txt .= "Név: " . $nev . "\n";
-    $txt .= "Telefon: " . $telefon . "\n";
-    $txt .= "Email: " . $email . "\n";
-    $txt .= "Hitelcél: " . $hitelcel . "\n";
-    if (!empty($uzenet)) {
-        $txt .= "Üzenet: " . $uzenet . "\n";
-    }
-    $newTxt = mb_convert_encoding($txt, "ISO-8859-2", "UTF-8");
-    fwrite($create_file, $newTxt);
-    fclose($create_file);
-
-    if (dirname($_SERVER["PHP_SELF"])) {
-        $path = $_SERVER["HTTP_ORIGIN"] . dirname($_SERVER["PHP_SELF"]) . "/vallalati_hiteligenyles.txt";
-    } else {
-        $path = $_SERVER["HTTP_ORIGIN"] . "/vallalati_hiteligenyles.txt";
-    }
-
-    if (isset($path)) {
-        $dokumentum = basename($path);
-    }
-
     if ($cegalapitas == 'true' && !empty($nev) && !empty($telefon) && !empty($email) 
         && $hitelcel !== '' && $adatvedelem == 'true') {
             $sql = "INSERT INTO vallalati_hiteligenyles (cegalapitas, nev, telefon, email, cegnev, hitelosszeg, hitelcel, ingatlan, uzenet, adatvedelem, hirlevel, dokumentum) 
@@ -55,6 +33,13 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                     $sql = "INSERT INTO vallalati_hiteligenyles (cegalapitas, nev, telefon, email, cegnev, hitelosszeg, hitelcel, ingatlan, uzenet, adatvedelem, hirlevel, dokumentum) 
                         VALUES ('$cegalapitas', '$nev', '$telefon', '$email', 'N/A', '$hitelosszeg', '$hitelcel', '$ingatlan', '$uzenet', '$adatvedelem', '$hirlevel', '$dokumentum')";
                     $result = mysqli_query($connection, $sql) or die($connection);
+    }
+
+    if (!empty($dokumentum)) {
+        $directory = "uploads/";
+        $path = $directory . $dokumentum;
+        $tmp = $_FILES['dokumentum']['tmp_name'];
+        move_uploaded_file($tmp, $path);
     }
 
     if (($cegalapitas == 'true' && !empty($nev) && !empty($telefon) && !empty($email) 
@@ -84,7 +69,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
             if (!empty($uzenet)) {
                 $message .= "<p>Üzenet: " . $uzenet . "</p>";
             }
-            $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
+            if (!empty($dokumentum)) {
+                $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
+            }
             $message .= "<p>Köszönjük, hogy vállalati hitel igényére nyújtott be kérvényt.</p>";
             $message .= "<p>Munkatársunk majd keresni fogja Önt.</p>";
             $message .= "<p>Üdvözlettel,<br><strong>Brokercash rendszer</strong></p>";

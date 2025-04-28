@@ -3,27 +3,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     $nev = mysqli_real_escape_string($connection, $_POST['nev']);
     $telefon = mysqli_real_escape_string($connection, $_POST['telefon']);
 
-    $create_file = fopen('visszahivas.txt', 'w') or die("Unable to open file!");
-    $txt = "";
-    $txt .= "Név: " . $nev . "\n";
-    $txt .= "Telefon: " . $telefon . "\n";
-    $newTxt = mb_convert_encoding($txt, "ISO-8859-2", "UTF-8");
-    fwrite($create_file, $newTxt);
-    fclose($create_file);
-
-    if (dirname($_SERVER["PHP_SELF"])) {
-        $path = $_SERVER["HTTP_ORIGIN"] . dirname($_SERVER["PHP_SELF"]) . "/visszahivas.txt";
-    } else {
-        $path = $_SERVER["HTTP_ORIGIN"] . "/visszahivas.txt";
-    }
-
-    if (isset($path)) {
-        $dokumentum = basename($path);
-    }
-
     if (!empty($nev) && !empty($telefon)) {
-        $sql = "INSERT INTO visszahivas (nev, telefon, dokumentum) 
-            VALUES ('$nev', '$telefon', '$dokumentum')";
+        $sql = "INSERT INTO visszahivas (nev, telefon) 
+            VALUES ('$nev', '$telefon')";
         $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
     }
 
@@ -41,7 +23,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         $message .= "<h3>A visszahívást kérő adatai</h3>";
         $message .= "<p>Név: " . $nev . "</p>";
         $message .= "<p>Telefonszám: <a href=tel:" . $telefon . ">" . $telefon . "</a></p>";
-        $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
         $message .= "<p>Köszönjük, hogy visszahívást kért tőlünk.</p>";
         $message .= "<p>Munkatársunk majd keresni fogja Önt a megadott telefonszámon.</p>";
         $message .= "<p>Üdvözlettel,<br><strong>Brokercash rendszer</strong></p>";

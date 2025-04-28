@@ -34,7 +34,7 @@ include('views/navigation.php');
                     <div class="genericForm">
                         <div class="post">
                             <p>Töltse ki az adatlapot, kollégáink díjmentesen elkészítik a legjobb hitelajánlatot és felveszik Önnel a kapcsolatot.</p>
-                            <form method="post" action="" name="lakossagi-hiteligenyles" id="lakossagi-hiteligenyles" class="shake">
+                            <form method="post" action="" name="lakossagi-hiteligenyles" id="lakossagi-hiteligenyles" class="shake" enctype="multipart/form-data">
                                 <div class="mb-3">
                                     <select id="hitelcel" name="hitelcel" class="form-select radius-input" required>
                                         <option value="" selected>A hitel célja</option>
@@ -61,6 +61,9 @@ include('views/navigation.php');
                                 </div>
                                 <div class="mb-3">
                                     <textarea rows="11" class="form-control flat-input" id="uzenet" name="uzenet" placeholder="Milyen szolgáltatás érdekli, mire szeretne hitelt felvenni?"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="file" class="form-control radius-input" id="dokumentum" name="dokumentum" placeholder="Dokumentum">
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="true" id="adatvedelem" name="adatvedelem" onclick="checkButton()" required>

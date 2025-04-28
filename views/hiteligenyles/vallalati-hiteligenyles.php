@@ -34,7 +34,7 @@ include('views/navigation.php');
                     <div class="genericForm">
                         <div class="post">
                             <p>Kérem töltse ki az alábbi űrlapot, lehetőség szerint minél több adatot adjon meg, hogy kollégáink teljeskörű tájékoztatást tudjanak adni az Ön részére. Tájékoztatásunk és ajánlatunk teljesen díjmentes. Igénylését követően felvesszük Önnel a kapcsolatot.</p>
-                            <form method="post" action="" name="vallalati-hiteligenyles" id="vallalati-hiteligenyles" class="shake">
+                            <form method="post" action="" name="vallalati-hiteligenyles" id="vallalati-hiteligenyles" class="shake" enctype="multipart/form-data">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="radio" name="cegalapitas" id="cegvan" value="true" onclick="function1()" checked>
                                     <label class="form-check-label" for="cegvan">
@@ -84,6 +84,9 @@ include('views/navigation.php');
                                 </div>
                                 <div class="mb-3">
                                     <textarea rows="11" class="form-control flat-input" id="uzenet" name="uzenet" placeholder="Egyéb üzenet számunkra"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="file" class="form-control radius-input" id="dokumentum" name="dokumentum" placeholder="Dokumentum">
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="true" id="adatvedelem" name="adatvedelem" onclick="checkButton()" required>
