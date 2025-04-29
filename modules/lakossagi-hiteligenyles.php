@@ -53,7 +53,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                 $message .= "<p>Üzenet: " . $uzenet . "</p>";
             }
             if (!empty($dokumentum)) {
-                $message .= "<p>Dokumentum: <a href=" . $path . ">" . $dokumentum . "</a></p>";
+                $message .= "<p>Dokumentum: <a href=http://" . $_SERVER['HTTP_HOST'] . "/" . $path . ">" . $dokumentum . "</a></p>";
             }
             $message .= "<p>Köszönjük, hogy lakossági hitel igényére nyújtott be kérvényt.</p>";
             $message .= "<p>Munkatársunk majd keresni fogja Önt.</p>";
