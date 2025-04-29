@@ -13,8 +13,8 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     }
 
     if (!empty($dokumentum)) {
-        $directory = "uploads/";
-        $path = $directory . $dokumentum;
+        $directory = "uploads";
+        $path = $directory . "/" . $dokumentum;
         $tmp = $_FILES['dokumentum']['tmp_name'];
         move_uploaded_file($tmp, $path);
     }
