@@ -181,6 +181,10 @@
                 document.getElementById("calculator-container").style.display = "none";
                 document.getElementById("calculator-content").style.display = "none";
             }
+            function openCalendar() {
+                document.getElementById("idopont").style.display = "none";
+                document.getElementById("naptar").style.display = "block";
+            }
         </script>
         <script>
             window.onscroll = function() {navbarScroll()};

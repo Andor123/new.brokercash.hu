@@ -43,6 +43,13 @@ include('views/navigation.php');
                             </form>
                         </div>
                     </div>
+                    <h3>Online konzultáció</h3>
+                    <div class="btn btn-primary" id="idopont" name="idopont" onclick="openCalendar()">Időpont foglalás</div>
+                    <form method="post" action="" name="" name="naptar" id="naptar" class="shake" style="display:none;">
+                        <div class="calendar">
+                            <iframe src="https://calendar.google.com/calendar/embed?src=58e52f88074965c4dc176005006b1d745d9cf4f4c3059c92e58f1e22a261dbe2%40group.calendar.google.com&ctz=Europe%2FBelgrade" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeIn">
                     <h3 class="small-title">Elérhetőségeink</h3>
