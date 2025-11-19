@@ -1,0 +1,57 @@
+@import url('presets.css');
+
+.calendar-container {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+#monthYear {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#prevMonth, #nextMonth {
+    background-color: var(--preset);
+    color: #fff;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th, .calendar-table td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #eee;
+}
+
+.calendar-table th {
+    background-color: var(--preset);
+    color: #fff;
+}
+
+.calendar-table td.current-month {
+    background-color: #fff;
+}
+
+.calendar-table td.prev-month, .calendar-table td.next-month {
+    color: #ccc;
+}
+
+.calendar-table td.today {
+    background-color: var(--preset);
+    color: #fff;
+}

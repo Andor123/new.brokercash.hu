@@ -231,5 +231,6 @@
         <script src="./js/script8.js"></script>
         <script src="./js/script9.js"></script>
         <script src="./js/script10.js"></script>
+        <script src="./js/calendar.js"></script>
     </body>
 </html>

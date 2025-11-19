@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="./css/buttons.css">
         <link rel="stylesheet" href="./css/responsive.css">
         <link rel="stylesheet" href="./css/cookie.css">
+        <link rel="stylesheet" href="./css/calendar.css">
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script>

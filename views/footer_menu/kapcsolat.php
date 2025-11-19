@@ -44,11 +44,51 @@ include('views/navigation.php');
                         </div>
                     </div>
                     <h3>Online konzultáció</h3>
-                    <div class="btn btn-primary" id="idopont" name="idopont" onclick="openCalendar()">Időpont foglalás</div>
+                    <button type="button" class="btn btn-primary" id="idopont" name="idopont" onclick="openCalendar()">Időpont foglalás</button>
                     <form method="post" action="" name="" name="naptar" id="naptar" class="shake" style="display:none;">
-                        <div class="calendar">
-                            <iframe src="https://calendar.google.com/calendar/embed?src=58e52f88074965c4dc176005006b1d745d9cf4f4c3059c92e58f1e22a261dbe2%40group.calendar.google.com&ctz=Europe%2FBelgrade" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                        <div class="mb-3">
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                    <button type="button" id="prevMonth">&lt;</button>
+                                    <h2 id="monthYear"></h2>
+                                    <button type="button" id="nextMonth">&gt;</button>
+                                </div>
+                                <table class="calendar-table">
+                                    <thead>
+                                        <tr>
+                                            <th>H</th>
+                                            <th>K</th>
+                                            <th>Sze</th>
+                                            <th>Cs</th>
+                                            <th>P</th>
+                                            <th>Szo</th>
+                                            <th>V</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="calendar-body"></tbody>
+                                </table>
+                            </div>
                         </div>
+                        <div class="mb-3">
+                            <select name="valasztas" id="valasztas" class="form-select radius-input">
+                                <option value="" selected>Időpont választás</option>
+                                <option value="8:30">8:30</option>
+                                <option value="9:00">9:00</option>
+                                <option value="9:30">9:30</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:30">10:30</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="submit2" form="naptar">Lefoglalás</button>
                     </form>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeIn">
