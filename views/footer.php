@@ -183,7 +183,7 @@
             }
             function openCalendar() {
                 document.getElementById("idopont").style.display = "none";
-                document.getElementById("naptar").style.display = "block";
+                document.getElementById("calendar").style.display = "block";
             }
         </script>
         <script>
@@ -231,6 +231,7 @@
         <script src="./js/script8.js"></script>
         <script src="./js/script9.js"></script>
         <script src="./js/script10.js"></script>
+        <script src="./js/script11.js"></script>
         <script src="./js/calendar.js"></script>
     </body>
 </html>

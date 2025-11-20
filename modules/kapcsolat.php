@@ -135,5 +135,17 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     echo json_encode($response);
     exit();
 }
+
+if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
+    $html = '';
+
+    $response = array(
+        'status' => 'success',
+        'html' => $html
+    );
+
+    echo json_encode($response);
+    exit();
+}
 include_once('views/footer_menu/kapcsolat.php');
 ?>

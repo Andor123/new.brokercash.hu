@@ -45,7 +45,7 @@ include('views/navigation.php');
                     </div>
                     <h3>Online konzultáció</h3>
                     <button type="button" class="btn btn-primary" id="idopont" name="idopont" onclick="openCalendar()">Időpont foglalás</button>
-                    <form method="post" action="" name="" name="naptar" id="naptar" class="shake" style="display:none;">
+                    <form method="post" action="" name="" name="calendar" id="calendar" class="shake" style="display:none;">
                         <div class="mb-3">
                             <div class="calendar-container">
                                 <div class="calendar-header">
@@ -88,7 +88,8 @@ include('views/navigation.php');
                                 <option value="15:30">15:30</option>
                             </select>
                         </div>
-                        <button type="button" class="btn btn-primary" id="submit2" form="naptar">Lefoglalás</button>
+                        <button type="button" class="btn btn-primary" id="submit2" form="calendar" onclick="calendarForm()">Lefoglalás</button>
+                        <div id="calendarSubmit"></div>
                     </form>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeIn">
