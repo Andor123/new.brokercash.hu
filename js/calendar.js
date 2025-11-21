@@ -1,5 +1,5 @@
-const calendarBody = document.getElementById('calendar-body');
-const monthYearDisplay = document.getElementById('monthYear');
+const calendarBody = document.getElementById('calendarBody');
+const currentMonthYear = document.getElementById('currentMonthYear');
 const prevMonthBtn = document.getElementById('prevMonth');
 const nextMonthBtn = document.getElementById('nextMonth');
 
@@ -7,44 +7,58 @@ let currentDate = new Date();
 
 function renderCalendar() {
     calendarBody.innerHTML = '';
-    monthYearDisplay.textContent = new Date(currentDate).toLocaleString('hu-HU', { month: 'long', year: 'numeric' });
-
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth();
 
-    const firstDayOfMonth = new Date(year, month, 1).getDay();
-    const firstDayIndex = (firstDayOfMonth === 0) ? 6 : firstDayOfMonth - 1;
+    currentMonthYear.textContent = new Date(year, month).toLocaleString('hu-HU', { month: 'long', year: 'numeric' });
+
+    const firstDayOfMonth = new Date(year, month, 1);
+
+    let startDay = firstDayOfMonth.getDay();
+    if (startDay === 0) {
+        startDay = 6;
+    } else {
+        startDay--;
+    }
 
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const daysInPrevMonth = new Date(year, month, 0).getDate();
 
-    let dayCounter = 1;
-    let prevMonthDayStart = daysInPrevMonth - firstDayIndex + 1;
-
+    let date = 1;
     for (let i = 0; i < 6; i++) {
         const row = document.createElement('tr');
         for (let j = 0; j < 7; j++) {
             const cell = document.createElement('td');
-            if (i === 0 && j < firstDayIndex) {
-                cell.textContent = prevMonthDayStart++;
-                cell.classList.add('prev-month');
-            } else if (dayCounter <= daysInMonth) {
-                cell.textContent = dayCounter;
-                cell.classList.add('current-month');
-                if (dayCounter === new Date().getDate() && month === new Date().getMonth() && year === new Date().getFullYear()) {
+            if (i === 0 && j < startDay) {
+                cell.classList.add('empty');
+            } else if (date > daysInMonth) {
+                cell.classList.add('empty');
+            } else {
+                cell.textContent = date;
+                cell.dataset.date = `${year}-${month + 1}-${date}`;
+                cell.addEventListener('click', handleDateClick);
+
+                const today = new Date();
+                if (date === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
                     cell.classList.add('today');
                 }
-                dayCounter++;
-            } else {
-                cell.textContent = dayCounter - daysInMonth;
-                cell.classList.add('next-month');
-                dayCounter++;
+                date++;
             }
             row.appendChild(cell);
         }
         calendarBody.appendChild(row);
-        if (dayCounter > daysInMonth && prevMonthDayStart > daysInPrevMonth) break;
+        if (date > daysInMonth) break;
     }
+}
+
+function handleDateClick(event) {
+    const previouslySelected = document.querySelector('.calendar-grid td.selected');
+    if (previouslySelected) {
+        previouslySelected.classList.remove('selected');
+        previouslySelected.removeAttribute('name');
+    }
+
+    event.target.classList.add('selected');
+    event.target.setAttribute("name", 'selected');
 }
 
 prevMonthBtn.addEventListener('click', () => {

@@ -45,15 +45,15 @@ include('views/navigation.php');
                     </div>
                     <h3>Online konzultáció</h3>
                     <button type="button" class="btn btn-primary" id="idopont" name="idopont" onclick="openCalendar()">Időpont foglalás</button>
-                    <form method="post" action="" name="" name="calendar" id="calendar" class="shake" style="display:none;">
+                    <form method="post" action="" name="calendar" id="calendar" class="shake" style="display:none;">
                         <div class="mb-3">
                             <div class="calendar-container">
                                 <div class="calendar-header">
                                     <button type="button" id="prevMonth">&lt;</button>
-                                    <h2 id="monthYear"></h2>
+                                    <h2 id="currentMonthYear"></h2>
                                     <button type="button" id="nextMonth">&gt;</button>
                                 </div>
-                                <table class="calendar-table">
+                                <table class="calendar-grid">
                                     <thead>
                                         <tr>
                                             <th>H</th>
@@ -65,12 +65,13 @@ include('views/navigation.php');
                                             <th>V</th>
                                         </tr>
                                     </thead>
-                                    <tbody id="calendar-body"></tbody>
+                                    <tbody id="calendarBody"></tbody>
                                 </table>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <select name="valasztas" id="valasztas" class="form-select radius-input">
+                            <label for="appointment">Időpontok</label>
+                            <select id="appointment" name="appointment" class="form-select radius-input" required>
                                 <option value="" selected>Időpont választás</option>
                                 <option value="8:30">8:30</option>
                                 <option value="9:00">9:00</option>

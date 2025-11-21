@@ -137,12 +137,33 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
 }
 
 if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
-    $html = '';
+    $selected = mysqli_real_escape_string($connection, $_POST['selectedDate']);
+    $appointment = mysqli_real_escape_string($connection, $_POST['appointment']);
 
-    $response = array(
-        'status' => 'success',
-        'html' => $html
-    );
+    $html = "";
+    if ($appointment !== "") {
+        $html .= "<div class='message-box color-info'>";
+        $html .= "<i class='bi bi-check-circle'></i>";
+        $html .= "<span>Az időpont lefoglalva, várjuk szeretettel.</span>";
+        $html .= "</div>";
+    } else {
+        $html .= "<div class='message-box color-info'>";
+        $html .= "<i class='bi bi-check-circle'></i>";
+        $html .= "<span>Kérjük töltse ki a kötelező mezőket.</span>";
+        $html .= "</div>";
+    }
+
+    if ($appointment !== "") {
+        $response = array(
+            'status' => 'success',
+            'html' => $html
+        );
+    } else {
+        $response = array(
+            'status' => 'failure',
+            'html' => $html
+        );
+    }
 
     echo json_encode($response);
     exit();

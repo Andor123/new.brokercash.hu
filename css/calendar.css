@@ -17,7 +17,7 @@
     border-bottom: 1px solid #ccc;
 }
 
-#monthYear {
+#currentMonthYear {
     font-size: 1.2rem;
     text-align: center;
 }
@@ -27,31 +27,37 @@
     color: #fff;
 }
 
-.calendar-table {
+.calendar-grid {
     width: 100%;
     border-collapse: collapse;
 }
 
-.calendar-table th, .calendar-table td {
+.calendar-grid th, .calendar-grid td {
     text-align: center;
     padding: 8px;
     border: 1px solid #eee;
 }
 
-.calendar-table th {
+.calendar-grid th {
     background-color: var(--preset);
     color: #fff;
 }
 
-.calendar-table td.current-month {
-    background-color: #fff;
+.calendar-grid td {
+    cursor: pointer;
 }
 
-.calendar-table td.prev-month, .calendar-table td.next-month {
-    color: #ccc;
+.calendar-grid td.today {
+    background-color: #888;
+    color: #000;
 }
 
-.calendar-table td.today {
+.calendar-grid td.selected {
     background-color: var(--preset);
     color: #fff;
+}
+
+.calendar-grid td.empty {
+    background-color: #f0f0f0;
+    cursor: default;
 }
