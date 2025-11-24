@@ -140,11 +140,53 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
     $selected = mysqli_real_escape_string($connection, $_POST['selectedDate']);
     $appointment = mysqli_real_escape_string($connection, $_POST['appointment']);
 
+    if ($appointment !== "") {
+        $sql = "INSERT INTO idopontkeres (selected, appointment, approved)
+            VALUES ('$selected', '$appointment', 'no')";
+        $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
+    }
+
+    $to = "salamon.andor@gmail.com";
+    $subject = "Időpontkérés";
+
+    $message = "";
+    $message .= "<html>";
+    $message .= "<head>";
+    $message .= "<title>Időpontkérés</title>";
+    $message .= "</head>";
+    $message .= "<body>";
+    $message .= "<div>";
+    $message .= "<h3>Az időpontkérés adatai</h3>";
+    if (!empty($selected)) {
+        $message .= "<p>Kiválasztott dátum: " . $selected . "</p>";
+    }
+    if ($appointment !== "") {
+        $message .= "<p>Kiválasztott időpont: " . $appointment . "</p>";
+    }
+    $message .= "<p>Az időpontkérés státusza:</p>";
+    $message .= "<p><a href=''>Elfogadás</a></p>";
+    $message .= "<p><a href=''>Elutasítás</a></p>";
+    $message .= "</div>";
+    $message .= "</body>";
+    $message .= "</html>";
+
+    $headers = "";
+    $headers .= "From: salamon.andor@gmail.com\r\n";
+    $headers .= "Reply-To: salamon.andor@gmail.com\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+    $mail_status = "";
+    if (mail($to, $subject, $message, $headers)) {
+        $mail_status .= "<p>Email sikeresen elküldve!</p>";
+    } else {
+        $mail_status .= "<p>Nem sikerült elküldeni az emailt.</p>";
+    }
+
     $html = "";
     if ($appointment !== "") {
         $html .= "<div class='message-box color-info'>";
         $html .= "<i class='bi bi-check-circle'></i>";
-        $html .= "<span>Az időpont lefoglalva, várjuk szeretettel.</span>";
+        $html .= "<span>Az időpont lefoglalva, a tanácsadó jóváhagyása után várjuk szeretettel.</span>";
         $html .= "</div>";
     } else {
         $html .= "<div class='message-box color-info'>";
@@ -156,7 +198,8 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
     if ($appointment !== "") {
         $response = array(
             'status' => 'success',
-            'html' => $html
+            'html' => $html,
+            'mail_status' => $mail_status
         );
     } else {
         $response = array(
