@@ -164,8 +164,8 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
         $message .= "<p>Kiválasztott időpont: " . $appointment . "</p>";
     }
     $message .= "<p>Az időpontkérés státusza:</p>";
-    $message .= "<p><a href=''>Elfogadás</a></p>";
-    $message .= "<p><a href=''>Elutasítás</a></p>";
+    $message .= "<p><a href='http://" . $_SERVER['HTTP_HOST'] . "/new.brokercash.hu/index.php?pg=accept'>Elfogadás</a></p>";
+    $message .= "<p><a href='http://" . $_SERVER['HTTP_HOST'] . "/new.brokercash.hu/index.php?pg=reject'>Elutasítás</a></p>";
     $message .= "</div>";
     $message .= "</body>";
     $message .= "</html>";
