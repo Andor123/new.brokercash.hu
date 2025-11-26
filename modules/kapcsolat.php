@@ -140,6 +140,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
     $selected = mysqli_real_escape_string($connection, $_POST['selectedDate']);
     $appointment = mysqli_real_escape_string($connection, $_POST['appointment']);
 
+    $_SESSION['selected'] = $selected;
+    $_SESSION['appointment'] = $appointment;
+
     if ($appointment !== "") {
         $sql = "INSERT INTO idopontkeres (selected, appointment, approved)
             VALUES ('$selected', '$appointment', 'no')";
