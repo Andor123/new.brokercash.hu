@@ -410,3 +410,15 @@ textarea {
     border-color: #cfebfe;
     background-color: #dff2fe;
 }
+
+.approved-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.approved-table th, 
+.approved-table td {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #888;
+}

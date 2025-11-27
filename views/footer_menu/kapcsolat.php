@@ -92,6 +92,34 @@ include('views/navigation.php');
                         <button type="button" class="btn btn-primary" id="submit2" form="calendar" onclick="calendarForm()">Lefoglalás</button>
                         <div id="calendarSubmit"></div>
                     </form>
+                    <br><br>
+                    <div id="approved" name="approved" style="display:none;">
+                        <h3>Elfogadott időpontok</h3>
+                        <table class="approved-table">
+                            <thead>
+                                <tr>
+                                    <th>Dátum</th>
+                                    <th>Időpont</th>
+                                </tr>
+                            </thead>
+                            <tbody id="approved-grid">
+                                <?php
+                                    $sql = "SELECT selected, appointment FROM idopontkeres WHERE approved='yes'";
+                                    $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while ($row = mysqli_fetch_array($result)) {
+                                            ?>
+                                            <tr>
+                                                <td><?php echo $row['selected']; ?></td>
+                                                <td><?php echo $row['appointment']; ?></td>
+                                            </tr>
+                                            <?php
+                                        }
+                                    }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 animate__animated animate__fadeIn">
                     <h3 class="small-title">Elérhetőségeink</h3>

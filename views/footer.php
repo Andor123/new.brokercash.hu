@@ -184,6 +184,7 @@
             function openCalendar() {
                 document.getElementById("idopont").style.display = "none";
                 document.getElementById("calendar").style.display = "block";
+                document.getElementById("approved").style.display = "block";
             }
         </script>
         <script>
