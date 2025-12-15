@@ -47,6 +47,9 @@ include('views/navigation.php');
                     <button type="button" class="btn btn-primary" id="idopont" name="idopont" onclick="openCalendar()">Időpont foglalás</button>
                     <form method="post" action="" name="calendar" id="calendar" class="shake" style="display:none;">
                         <div class="mb-3">
+                            <input type="email" class="form-control radius-input" id="contactEmail" name="contactEmail" placeholder="Kapcsolattartó email cím*" required />
+                        </div>
+                        <div class="mb-3">
                             <div class="calendar-container">
                                 <div class="calendar-header">
                                     <button type="button" id="prevMonth">&lt;</button>
@@ -70,7 +73,6 @@ include('views/navigation.php');
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="appointment">Időpontok</label>
                             <select id="appointment" name="appointment" class="form-select radius-input" required>
                                 <option value="" selected>Időpont választás</option>
                                 <option value="8:30">8:30</option>

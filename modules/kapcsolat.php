@@ -137,19 +137,21 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
 }
 
 if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
+    $contact = mysqli_real_escape_string($connection, $_POST['contactEmail']);
     $selected = mysqli_real_escape_string($connection, $_POST['selectedDate']);
     $appointment = mysqli_real_escape_string($connection, $_POST['appointment']);
 
+    $_SESSION['contact'] = $contact;
     $_SESSION['selected'] = $selected;
     $_SESSION['appointment'] = $appointment;
 
     if ($appointment !== "") {
-        $sql = "INSERT INTO idopontkeres (selected, appointment, approved)
-            VALUES ('$selected', '$appointment', 'no')";
+        $sql = "INSERT INTO idopontkeres (contact, selected, appointment, approved)
+            VALUES ('$contact', '$selected', '$appointment', 'no')";
         $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
     }
 
-    $to = "info@brokercash.hu";
+    $to = $contact;
     $subject = "Időpontkérés";
 
     $message = "";

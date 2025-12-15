@@ -6,14 +6,16 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'phpseclib3\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Rize\\' => array($vendorDir . '/rize/uri-template/src/Rize'),
     'ReCaptcha\\' => array($vendorDir . '/google/recaptcha/src/ReCaptcha'),
     'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),
     'Ramsey\\Collection\\' => array($vendorDir . '/ramsey/collection/src'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
-    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src', $vendorDir . '/psr/http-factory/src'),
+    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
     'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
     'Psr\\Cache\\' => array($vendorDir . '/psr/cache/src'),
+    'ParagonIE\\ConstantTime\\' => array($vendorDir . '/paragonie/constant_time_encoding/src'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
@@ -35,6 +37,7 @@ return array(
     'Google\\Shopping\\Merchant\\Conversions\\' => array($vendorDir . '/google/cloud/ShoppingMerchantConversions/src'),
     'Google\\Shopping\\Merchant\\Accounts\\' => array($vendorDir . '/google/cloud/ShoppingMerchantAccounts/src'),
     'Google\\Shopping\\Css\\' => array($vendorDir . '/google/cloud/ShoppingCss/src'),
+    'Google\\Service\\' => array($vendorDir . '/google/apiclient-services/src'),
     'Google\\Rpc\\' => array($vendorDir . '/google/cloud/CommonProtos/src/Rpc'),
     'Google\\Protobuf\\' => array($vendorDir . '/google/protobuf/src/Google/Protobuf'),
     'Google\\Maps\\RouteOptimization\\' => array($vendorDir . '/google/cloud/MapsRouteOptimization/src'),
@@ -225,6 +228,7 @@ return array(
     'Google\\Analytics\\Data\\' => array($vendorDir . '/google/cloud/AnalyticsData/src'),
     'Google\\Analytics\\Admin\\' => array($vendorDir . '/google/cloud/AnalyticsAdmin/src'),
     'Google\\Ads\\MarketingPlatform\\Admin\\' => array($vendorDir . '/google/cloud/AdsMarketingPlatformAdmin/src'),
+    'Google\\' => array($vendorDir . '/google/apiclient/src'),
     'GPBMetadata\\Grafeas\\' => array($vendorDir . '/google/cloud/Grafeas/metadata'),
     'GPBMetadata\\Google\\Type\\' => array($vendorDir . '/google/cloud/CommonProtos/metadata/Type'),
     'GPBMetadata\\Google\\Storagetransfer\\' => array($vendorDir . '/google/cloud/StorageTransfer/metadata'),
