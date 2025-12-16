@@ -4,6 +4,7 @@
         "google/recaptcha": "^1.3",
         "google/cloud": "^0.262.0",
         "google/apps-meet": "*",
-        "google/apiclient": "^2.18"
+        "google/apiclient": "^2.18",
+        "google/auth": "^1.49"
     }
 }

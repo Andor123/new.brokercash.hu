@@ -12,30 +12,41 @@ $startDate = $datetime->format(DateTime::ATOM);
 $addedtime = $datetime->add(new DateInterval('PT60M'));
 $endDate = $addedtime->format(DateTime::ATOM);
 
-$event = new Google_Service_Calendar_Event(array(
+$client->setAccessToken($_SESSION['access_token']);
+
+if ($client->isAccessTokenExpired()) {
+    $client->fetchAccessTokenWithRefreshToken(
+        $client->getRefreshToken()
+    );
+    $_SESSION['access_token'] = $client->getAccessToken();
+}
+
+$calendar = new Google_Service_Calendar($client);
+$calendarId = 'primary';
+$event = new Google_Service_Calendar_Event([
     'summary' => 'Brokercash Online Konzultáció',
     'location' => 'Google Meet',
     'description' => 'Ez a Brokercash online konzultációja',
-    'start' => array(
+    'start' => [
         'dateTime' => $startDate,
         'timeZone' => 'Europe/Budapest'
-    ),
-    'end' => array(
+    ],
+    'end' => [
         'dateTime' => $endDate,
         'timeZone' => 'Europe/Budapest'
-    ),
-    'conferenceData' => array(
-        'createRequest' => array(
+    ],
+    'conferenceData' => [
+        'createRequest' => [
             'requestId' => uniqid(),
-            'conferenceSolutionKey' => array(
+            'conferenceSolutionKey' => [
                 'type' => 'hangoutsMeet'
-            )
-        )
-    )
-));
+            ]
+        ]
+    ]
+]);
 
-$calendarId = 'primary';
-//$event = $calendar->events->insert($calendarId, $event, ['conferenceDataVersion' => 1]);
+$event = $calendar->events->insert($calendarId, $event, ['conferenceDataVersion' => 1]);
+printf('Esemény létrehozva: %s\n', $event->htmlLink);
 
 include_once('views/calendar/accept.php');
 ?>
