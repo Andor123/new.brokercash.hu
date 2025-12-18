@@ -151,7 +151,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
         $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
     }
 
-    $to = $contact;
+    $to = "info@brokercash.hu";
     $subject = "Időpontkérés";
 
     $message = "";
@@ -176,7 +176,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
     $message .= "</html>";
 
     $headers = "";
-    $headers .= "From: info@brokercash.hu\r\n";
+    $headers .= "From: " . $contact . "\r\n";
     $headers .= "Reply-To: info@brokercash.hu\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
