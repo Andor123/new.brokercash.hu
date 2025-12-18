@@ -12,15 +12,6 @@ $startDate = $datetime->format(DateTime::ATOM);
 $addedtime = $datetime->add(new DateInterval('PT60M'));
 $endDate = $addedtime->format(DateTime::ATOM);
 
-$client->setAccessToken($_SESSION['access_token']);
-
-if ($client->isAccessTokenExpired()) {
-    $client->fetchAccessTokenWithRefreshToken(
-        $client->getRefreshToken()
-    );
-    $_SESSION['access_token'] = $client->getAccessToken();
-}
-
 $calendar = new Google_Service_Calendar($client);
 $calendarId = 'primary';
 $event = new Google_Service_Calendar_Event([

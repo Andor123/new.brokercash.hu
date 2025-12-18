@@ -12,7 +12,10 @@ if (isset($token['error'])) {
     die('OAuth hiba: ' . $token['error_description']);
 }
 
-$_SESSION['access_token'] = $token;
+file_put_contents(
+    __DIR__ . '/token.json',
+    json_encode($token)
+);
 
 header('Location: index.php');
 exit;

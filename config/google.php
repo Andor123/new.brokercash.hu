@@ -8,5 +8,4 @@ $client->setScopes([
 ]);
 $client->setRedirectUri('http://localhost/new.brokercash.hu/auth.php');
 $client->setAccessType('offline');
-$client->setPrompt('consent');
 ?>

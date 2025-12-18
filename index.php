@@ -14,23 +14,28 @@ if (isset($_GET['pg']) && !empty($_GET['pg'])) {
     $pg = $_GET['pg'];
 }
 
-if (!isset($_SESSION['access_token'])) {
-    $authUri = $client->createAuthUrl();
-    header('Location: ' . $authUri);
+$tokenPath = __DIR__ . '/token.json';
+
+if (!file_exists($tokenPath)) {
+    header('Location: auth.php');
     exit;
 }
 
-$client->setAccessToken($_SESSION['access_token']);
+$token = json_decode(file_get_contents($tokenPath), true);
+$client->setAccessToken($token);
 
 if ($client->isAccessTokenExpired()) {
     if ($client->getRefreshToken()) {
         $client->fetchAccessTokenWithRefreshToken(
             $client->getRefreshToken()
         );
-        $_SESSION['access_token'] = $client->getAccessToken();
+        file_put_contents(
+            $tokenPath,
+            json_encode($client->getAccessToken())
+        );
     } else {
-        unset($_SESSION['access_token']);
-        header('Location: index.php');
+        unlink($tokenPath);
+        header('Location: auth.php');
         exit;
     }
 }
