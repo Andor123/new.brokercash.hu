@@ -18,18 +18,18 @@ class ComposerStaticInit2185d2f99bcd56787481d9357a5972d3
     );
 
     public static $prefixLengthsPsr4 = array (
-        'p' => 
+        'p' =>
         array (
             'phpseclib3\\' => 11,
         ),
-        'R' => 
+        'R' =>
         array (
             'Rize\\' => 5,
             'ReCaptcha\\' => 10,
             'Ramsey\\Uuid\\' => 12,
             'Ramsey\\Collection\\' => 18,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
@@ -38,11 +38,11 @@ class ComposerStaticInit2185d2f99bcd56787481d9357a5972d3
             'ParagonIE\\ConstantTime\\' => 23,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
-        'M' => 
+        'M' =>
         array (
             'Monolog\\' => 8,
         ),
-        'G' => 
+        'G' =>
         array (
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
@@ -459,1733 +459,1733 @@ class ComposerStaticInit2185d2f99bcd56787481d9357a5972d3
             'GPBMetadata\\Google\\Analytics\\Admin\\' => 35,
             'GPBMetadata\\ApiCore\\' => 20,
         ),
-        'F' => 
+        'F' =>
         array (
             'Firebase\\JWT\\' => 13,
         ),
-        'B' => 
+        'B' =>
         array (
             'Brick\\Math\\' => 11,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'phpseclib3\\' => 
+        'phpseclib3\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
         ),
-        'Rize\\' => 
+        'Rize\\' =>
         array (
             0 => __DIR__ . '/..' . '/rize/uri-template/src/Rize',
         ),
-        'ReCaptcha\\' => 
+        'ReCaptcha\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
         ),
-        'Ramsey\\Uuid\\' => 
+        'Ramsey\\Uuid\\' =>
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
         ),
-        'Ramsey\\Collection\\' => 
+        'Ramsey\\Collection\\' =>
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
         ),
-        'Psr\\Log\\' => 
+        'Psr\\Log\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Psr\\Http\\Message\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'Psr\\Http\\Client\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Psr\\Cache\\' => 
+        'Psr\\Cache\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
         ),
-        'ParagonIE\\ConstantTime\\' => 
+        'ParagonIE\\ConstantTime\\' =>
         array (
             0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
         ),
-        'PHPMailer\\PHPMailer\\' => 
+        'PHPMailer\\PHPMailer\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
-        'Monolog\\' => 
+        'Monolog\\' =>
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
-        'GuzzleHttp\\Psr7\\' => 
+        'GuzzleHttp\\Psr7\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
+        'GuzzleHttp\\Promise\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
         ),
-        'GuzzleHttp\\' => 
+        'GuzzleHttp\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
-        'Grpc\\Gcp\\' => 
+        'Grpc\\Gcp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/grpc-gcp/src',
         ),
-        'Grpc\\' => 
+        'Grpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/grpc/grpc/src/lib',
         ),
-        'Grafeas\\' => 
+        'Grafeas\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Grafeas/src',
         ),
-        'Google\\Type\\' => 
+        'Google\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommonProtos/src/Type',
         ),
-        'Google\\Shopping\\Type\\' => 
+        'Google\\Shopping\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingCommonProtos/src/Type',
         ),
-        'Google\\Shopping\\Merchant\\Reports\\' => 
+        'Google\\Shopping\\Merchant\\Reports\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantReports/src',
         ),
-        'Google\\Shopping\\Merchant\\Quota\\' => 
+        'Google\\Shopping\\Merchant\\Quota\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantQuota/src',
         ),
-        'Google\\Shopping\\Merchant\\Promotions\\' => 
+        'Google\\Shopping\\Merchant\\Promotions\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantPromotions/src',
         ),
-        'Google\\Shopping\\Merchant\\Products\\' => 
+        'Google\\Shopping\\Merchant\\Products\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantProducts/src',
         ),
-        'Google\\Shopping\\Merchant\\Notifications\\' => 
+        'Google\\Shopping\\Merchant\\Notifications\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantNotifications/src',
         ),
-        'Google\\Shopping\\Merchant\\Lfp\\' => 
+        'Google\\Shopping\\Merchant\\Lfp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantLfp/src',
         ),
-        'Google\\Shopping\\Merchant\\Inventories\\' => 
+        'Google\\Shopping\\Merchant\\Inventories\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantInventories/src',
         ),
-        'Google\\Shopping\\Merchant\\DataSources\\' => 
+        'Google\\Shopping\\Merchant\\DataSources\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantDataSources/src',
         ),
-        'Google\\Shopping\\Merchant\\Conversions\\' => 
+        'Google\\Shopping\\Merchant\\Conversions\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantConversions/src',
         ),
-        'Google\\Shopping\\Merchant\\Accounts\\' => 
+        'Google\\Shopping\\Merchant\\Accounts\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantAccounts/src',
         ),
-        'Google\\Shopping\\Css\\' => 
+        'Google\\Shopping\\Css\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingCss/src',
         ),
-        'Google\\Service\\' => 
+        'Google\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/apiclient-services/src',
         ),
-        'Google\\Rpc\\' => 
+        'Google\\Rpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommonProtos/src/Rpc',
         ),
-        'Google\\Protobuf\\' => 
+        'Google\\Protobuf\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf',
         ),
-        'Google\\Maps\\RouteOptimization\\' => 
+        'Google\\Maps\\RouteOptimization\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MapsRouteOptimization/src',
         ),
-        'Google\\Maps\\FleetEngine\\Delivery\\' => 
+        'Google\\Maps\\FleetEngine\\Delivery\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MapsFleetEngineDelivery/src',
         ),
-        'Google\\Maps\\FleetEngine\\' => 
+        'Google\\Maps\\FleetEngine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MapsFleetEngine/src',
         ),
-        'Google\\LongRunning\\' => 
+        'Google\\LongRunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/LongRunning/src/LongRunning',
         ),
-        'Google\\Identity\\AccessContextManager\\' => 
+        'Google\\Identity\\AccessContextManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AccessContextManager/src',
         ),
-        'Google\\Iam\\' => 
+        'Google\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommonProtos/src/Iam',
         ),
-        'Google\\Geo\\' => 
+        'Google\\Geo\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GeoCommonProtos/src',
         ),
-        'Google\\Cloud\\Workflows\\' => 
+        'Google\\Cloud\\Workflows\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Workflows/src',
         ),
-        'Google\\Cloud\\WebSecurityScanner\\' => 
+        'Google\\Cloud\\WebSecurityScanner\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/WebSecurityScanner/src',
         ),
-        'Google\\Cloud\\WebRisk\\' => 
+        'Google\\Cloud\\WebRisk\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/WebRisk/src',
         ),
-        'Google\\Cloud\\VpcAccess\\' => 
+        'Google\\Cloud\\VpcAccess\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VpcAccess/src',
         ),
-        'Google\\Cloud\\VmwareEngine\\' => 
+        'Google\\Cloud\\VmwareEngine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VmwareEngine/src',
         ),
-        'Google\\Cloud\\Vision\\' => 
+        'Google\\Cloud\\Vision\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Vision/src',
         ),
-        'Google\\Cloud\\Video\\Transcoder\\' => 
+        'Google\\Cloud\\Video\\Transcoder\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VideoTranscoder/src',
         ),
-        'Google\\Cloud\\Video\\Stitcher\\' => 
+        'Google\\Cloud\\Video\\Stitcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VideoStitcher/src',
         ),
-        'Google\\Cloud\\Video\\LiveStream\\' => 
+        'Google\\Cloud\\Video\\LiveStream\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VideoLiveStream/src',
         ),
-        'Google\\Cloud\\VideoIntelligence\\' => 
+        'Google\\Cloud\\VideoIntelligence\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VideoIntelligence/src',
         ),
-        'Google\\Cloud\\VMMigration\\' => 
+        'Google\\Cloud\\VMMigration\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VmMigration/src',
         ),
-        'Google\\Cloud\\Translate\\' => 
+        'Google\\Cloud\\Translate\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Translate/src',
         ),
-        'Google\\Cloud\\Trace\\' => 
+        'Google\\Cloud\\Trace\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Trace/src',
         ),
-        'Google\\Cloud\\Tpu\\' => 
+        'Google\\Cloud\\Tpu\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Tpu/src',
         ),
-        'Google\\Cloud\\TextToSpeech\\' => 
+        'Google\\Cloud\\TextToSpeech\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/TextToSpeech/src',
         ),
-        'Google\\Cloud\\TelcoAutomation\\' => 
+        'Google\\Cloud\\TelcoAutomation\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/TelcoAutomation/src',
         ),
-        'Google\\Cloud\\Tasks\\' => 
+        'Google\\Cloud\\Tasks\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Tasks/src',
         ),
-        'Google\\Cloud\\Talent\\' => 
+        'Google\\Cloud\\Talent\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Talent/src',
         ),
-        'Google\\Cloud\\Support\\' => 
+        'Google\\Cloud\\Support\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Support/src',
         ),
-        'Google\\Cloud\\Storage\\Control\\' => 
+        'Google\\Cloud\\Storage\\Control\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/StorageControl/src',
         ),
-        'Google\\Cloud\\Storage\\' => 
+        'Google\\Cloud\\Storage\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Storage/src',
         ),
-        'Google\\Cloud\\StorageTransfer\\' => 
+        'Google\\Cloud\\StorageTransfer\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/StorageTransfer/src',
         ),
-        'Google\\Cloud\\StorageInsights\\' => 
+        'Google\\Cloud\\StorageInsights\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/StorageInsights/src',
         ),
-        'Google\\Cloud\\Sql\\' => 
+        'Google\\Cloud\\Sql\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SqlAdmin/src',
         ),
-        'Google\\Cloud\\Speech\\' => 
+        'Google\\Cloud\\Speech\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Speech/src',
         ),
-        'Google\\Cloud\\Spanner\\' => 
+        'Google\\Cloud\\Spanner\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Spanner/src',
         ),
-        'Google\\Cloud\\Shell\\' => 
+        'Google\\Cloud\\Shell\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Shell/src',
         ),
-        'Google\\Cloud\\ServiceUsage\\' => 
+        'Google\\Cloud\\ServiceUsage\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceUsage/src',
         ),
-        'Google\\Cloud\\ServiceManagement\\' => 
+        'Google\\Cloud\\ServiceManagement\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceManagement/src',
         ),
-        'Google\\Cloud\\ServiceHealth\\' => 
+        'Google\\Cloud\\ServiceHealth\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceHealth/src',
         ),
-        'Google\\Cloud\\ServiceDirectory\\' => 
+        'Google\\Cloud\\ServiceDirectory\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceDirectory/src',
         ),
-        'Google\\Cloud\\ServiceControl\\' => 
+        'Google\\Cloud\\ServiceControl\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceControl/src',
         ),
-        'Google\\Cloud\\Security\\PublicCA\\' => 
+        'Google\\Cloud\\Security\\PublicCA\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecurityPublicCA/src',
         ),
-        'Google\\Cloud\\Security\\PrivateCA\\' => 
+        'Google\\Cloud\\Security\\PrivateCA\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecurityPrivateCa/src',
         ),
-        'Google\\Cloud\\SecurityCenter\\' => 
+        'Google\\Cloud\\SecurityCenter\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecurityCenter/src',
         ),
-        'Google\\Cloud\\SecurityCenterManagement\\' => 
+        'Google\\Cloud\\SecurityCenterManagement\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecurityCenterManagement/src',
         ),
-        'Google\\Cloud\\SecureSourceManager\\' => 
+        'Google\\Cloud\\SecureSourceManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecureSourceManager/src',
         ),
-        'Google\\Cloud\\SecretManager\\' => 
+        'Google\\Cloud\\SecretManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecretManager/src',
         ),
-        'Google\\Cloud\\Scheduler\\' => 
+        'Google\\Cloud\\Scheduler\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Scheduler/src',
         ),
-        'Google\\Cloud\\Run\\' => 
+        'Google\\Cloud\\Run\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Run/src',
         ),
-        'Google\\Cloud\\Retail\\' => 
+        'Google\\Cloud\\Retail\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Retail/src',
         ),
-        'Google\\Cloud\\ResourceSettings\\' => 
+        'Google\\Cloud\\ResourceSettings\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ResourceSettings/src',
         ),
-        'Google\\Cloud\\ResourceManager\\' => 
+        'Google\\Cloud\\ResourceManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ResourceManager/src',
         ),
-        'Google\\Cloud\\Redis\\Cluster\\' => 
+        'Google\\Cloud\\Redis\\Cluster\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/RedisCluster/src',
         ),
-        'Google\\Cloud\\Redis\\' => 
+        'Google\\Cloud\\Redis\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Redis/src',
         ),
-        'Google\\Cloud\\Recommender\\' => 
+        'Google\\Cloud\\Recommender\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Recommender/src',
         ),
-        'Google\\Cloud\\RecommendationEngine\\' => 
+        'Google\\Cloud\\RecommendationEngine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/RecommendationEngine/src',
         ),
-        'Google\\Cloud\\RecaptchaEnterprise\\' => 
+        'Google\\Cloud\\RecaptchaEnterprise\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/RecaptchaEnterprise/src',
         ),
-        'Google\\Cloud\\RapidMigrationAssessment\\' => 
+        'Google\\Cloud\\RapidMigrationAssessment\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/RapidMigrationAssessment/src',
         ),
-        'Google\\Cloud\\PubSub\\' => 
+        'Google\\Cloud\\PubSub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PubSub/src',
         ),
-        'Google\\Cloud\\Profiler\\' => 
+        'Google\\Cloud\\Profiler\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Profiler/src',
         ),
-        'Google\\Cloud\\PrivilegedAccessManager\\' => 
+        'Google\\Cloud\\PrivilegedAccessManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PrivilegedAccessManager/src',
         ),
-        'Google\\Cloud\\PrivateCatalog\\' => 
+        'Google\\Cloud\\PrivateCatalog\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PrivateCatalog/src',
         ),
-        'Google\\Cloud\\PolicyTroubleshooter\\Iam\\' => 
+        'Google\\Cloud\\PolicyTroubleshooter\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PolicyTroubleshooterIam/src',
         ),
-        'Google\\Cloud\\PolicyTroubleshooter\\' => 
+        'Google\\Cloud\\PolicyTroubleshooter\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PolicyTroubleshooter/src',
         ),
-        'Google\\Cloud\\PolicySimulator\\' => 
+        'Google\\Cloud\\PolicySimulator\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PolicySimulator/src',
         ),
-        'Google\\Cloud\\Parallelstore\\' => 
+        'Google\\Cloud\\Parallelstore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Parallelstore/src',
         ),
-        'Google\\Cloud\\OsLogin\\' => 
+        'Google\\Cloud\\OsLogin\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OsLogin/src',
         ),
-        'Google\\Cloud\\OsConfig\\' => 
+        'Google\\Cloud\\OsConfig\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OsConfig/src',
         ),
-        'Google\\Cloud\\OrgPolicy\\' => 
+        'Google\\Cloud\\OrgPolicy\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OrgPolicy/src',
             1 => __DIR__ . '/..' . '/google/cloud/Asset/external/protos/Cloud/OrgPolicy',
         ),
-        'Google\\Cloud\\Orchestration\\Airflow\\Service\\' => 
+        'Google\\Cloud\\Orchestration\\Airflow\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OrchestrationAirflow/src',
         ),
-        'Google\\Cloud\\OracleDatabase\\' => 
+        'Google\\Cloud\\OracleDatabase\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OracleDatabase/src',
         ),
-        'Google\\Cloud\\Optimization\\' => 
+        'Google\\Cloud\\Optimization\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Optimization/src',
         ),
-        'Google\\Cloud\\Notebooks\\' => 
+        'Google\\Cloud\\Notebooks\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Notebooks/src',
         ),
-        'Google\\Cloud\\NetworkServices\\' => 
+        'Google\\Cloud\\NetworkServices\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetworkServices/src',
         ),
-        'Google\\Cloud\\NetworkSecurity\\' => 
+        'Google\\Cloud\\NetworkSecurity\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetworkSecurity/src',
         ),
-        'Google\\Cloud\\NetworkManagement\\' => 
+        'Google\\Cloud\\NetworkManagement\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetworkManagement/src',
         ),
-        'Google\\Cloud\\NetworkConnectivity\\' => 
+        'Google\\Cloud\\NetworkConnectivity\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetworkConnectivity/src',
         ),
-        'Google\\Cloud\\NetApp\\' => 
+        'Google\\Cloud\\NetApp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetApp/src',
         ),
-        'Google\\Cloud\\Monitoring\\' => 
+        'Google\\Cloud\\Monitoring\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Monitoring/src',
         ),
-        'Google\\Cloud\\MigrationCenter\\' => 
+        'Google\\Cloud\\MigrationCenter\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MigrationCenter/src',
         ),
-        'Google\\Cloud\\Metastore\\' => 
+        'Google\\Cloud\\Metastore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataprocMetastore/src',
         ),
-        'Google\\Cloud\\Memcache\\' => 
+        'Google\\Cloud\\Memcache\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Memcache/src',
         ),
-        'Google\\Cloud\\MediaTranslation\\' => 
+        'Google\\Cloud\\MediaTranslation\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MediaTranslation/src',
         ),
-        'Google\\Cloud\\ManagedKafka\\' => 
+        'Google\\Cloud\\ManagedKafka\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ManagedKafka/src',
         ),
-        'Google\\Cloud\\ManagedIdentities\\' => 
+        'Google\\Cloud\\ManagedIdentities\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ManagedIdentities/src',
         ),
-        'Google\\Cloud\\Logging\\' => 
+        'Google\\Cloud\\Logging\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Logging/src',
         ),
-        'Google\\Cloud\\LifeSciences\\' => 
+        'Google\\Cloud\\LifeSciences\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/LifeSciences/src',
         ),
-        'Google\\Cloud\\Language\\' => 
+        'Google\\Cloud\\Language\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Language/src',
         ),
-        'Google\\Cloud\\Kms\\Inventory\\' => 
+        'Google\\Cloud\\Kms\\Inventory\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/KmsInventory/src',
         ),
-        'Google\\Cloud\\Kms\\' => 
+        'Google\\Cloud\\Kms\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Kms/src',
         ),
-        'Google\\Cloud\\Ids\\' => 
+        'Google\\Cloud\\Ids\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Ids/src',
         ),
-        'Google\\Cloud\\Iap\\' => 
+        'Google\\Cloud\\Iap\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Iap/src',
         ),
-        'Google\\Cloud\\Iam\\Credentials\\' => 
+        'Google\\Cloud\\Iam\\Credentials\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/IamCredentials/src',
         ),
-        'Google\\Cloud\\Iam\\' => 
+        'Google\\Cloud\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Iam/src',
         ),
-        'Google\\Cloud\\GkeMultiCloud\\' => 
+        'Google\\Cloud\\GkeMultiCloud\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GkeMultiCloud/src',
         ),
-        'Google\\Cloud\\GkeHub\\' => 
+        'Google\\Cloud\\GkeHub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GkeHub/src',
         ),
-        'Google\\Cloud\\GkeConnect\\Gateway\\' => 
+        'Google\\Cloud\\GkeConnect\\Gateway\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GkeConnectGateway/src',
         ),
-        'Google\\Cloud\\GkeBackup\\' => 
+        'Google\\Cloud\\GkeBackup\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GkeBackup/src',
         ),
-        'Google\\Cloud\\GSuiteAddOns\\' => 
+        'Google\\Cloud\\GSuiteAddOns\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GSuiteAddOns/src',
         ),
-        'Google\\Cloud\\Functions\\' => 
+        'Google\\Cloud\\Functions\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Functions/src',
         ),
-        'Google\\Cloud\\Firestore\\' => 
+        'Google\\Cloud\\Firestore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Firestore/src',
         ),
-        'Google\\Cloud\\Filestore\\' => 
+        'Google\\Cloud\\Filestore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Filestore/src',
         ),
-        'Google\\Cloud\\Eventarc\\Publishing\\' => 
+        'Google\\Cloud\\Eventarc\\Publishing\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/EventarcPublishing/src',
         ),
-        'Google\\Cloud\\Eventarc\\' => 
+        'Google\\Cloud\\Eventarc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Eventarc/src',
         ),
-        'Google\\Cloud\\EssentialContacts\\' => 
+        'Google\\Cloud\\EssentialContacts\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/EssentialContacts/src',
         ),
-        'Google\\Cloud\\ErrorReporting\\' => 
+        'Google\\Cloud\\ErrorReporting\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ErrorReporting/src',
         ),
-        'Google\\Cloud\\EdgeNetwork\\' => 
+        'Google\\Cloud\\EdgeNetwork\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/EdgeNetwork/src',
         ),
-        'Google\\Cloud\\Domains\\' => 
+        'Google\\Cloud\\Domains\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Domains/src',
         ),
-        'Google\\Cloud\\DocumentAI\\' => 
+        'Google\\Cloud\\DocumentAI\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DocumentAi/src',
         ),
-        'Google\\Cloud\\Dlp\\' => 
+        'Google\\Cloud\\Dlp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dlp/src',
         ),
-        'Google\\Cloud\\DiscoveryEngine\\' => 
+        'Google\\Cloud\\DiscoveryEngine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DiscoveryEngine/src',
         ),
-        'Google\\Cloud\\Dialogflow\\Cx\\' => 
+        'Google\\Cloud\\Dialogflow\\Cx\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DialogflowCx/src',
         ),
-        'Google\\Cloud\\Dialogflow\\' => 
+        'Google\\Cloud\\Dialogflow\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dialogflow/src',
         ),
-        'Google\\Cloud\\DeveloperConnect\\' => 
+        'Google\\Cloud\\DeveloperConnect\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DeveloperConnect/src',
         ),
-        'Google\\Cloud\\Deploy\\' => 
+        'Google\\Cloud\\Deploy\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Deploy/src',
         ),
-        'Google\\Cloud\\Debugger\\' => 
+        'Google\\Cloud\\Debugger\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Debugger/src',
         ),
-        'Google\\Cloud\\Datastream\\' => 
+        'Google\\Cloud\\Datastream\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Datastream/src',
         ),
-        'Google\\Cloud\\Datastore\\Admin\\' => 
+        'Google\\Cloud\\Datastore\\Admin\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DatastoreAdmin/src',
         ),
-        'Google\\Cloud\\Datastore\\' => 
+        'Google\\Cloud\\Datastore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Datastore/src',
         ),
-        'Google\\Cloud\\Dataproc\\' => 
+        'Google\\Cloud\\Dataproc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dataproc/src',
         ),
-        'Google\\Cloud\\Dataplex\\' => 
+        'Google\\Cloud\\Dataplex\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dataplex/src',
         ),
-        'Google\\Cloud\\Dataform\\' => 
+        'Google\\Cloud\\Dataform\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dataform/src',
         ),
-        'Google\\Cloud\\Dataflow\\' => 
+        'Google\\Cloud\\Dataflow\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dataflow/src',
         ),
-        'Google\\Cloud\\DataLabeling\\' => 
+        'Google\\Cloud\\DataLabeling\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataLabeling/src',
         ),
-        'Google\\Cloud\\DataFusion\\' => 
+        'Google\\Cloud\\DataFusion\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataFusion/src',
         ),
-        'Google\\Cloud\\DataCatalog\\Lineage\\' => 
+        'Google\\Cloud\\DataCatalog\\Lineage\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataCatalogLineage/src',
         ),
-        'Google\\Cloud\\DataCatalog\\' => 
+        'Google\\Cloud\\DataCatalog\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataCatalog/src',
         ),
-        'Google\\Cloud\\Core\\' => 
+        'Google\\Cloud\\Core\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Core/src',
         ),
-        'Google\\Cloud\\Container\\' => 
+        'Google\\Cloud\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Container/src',
         ),
-        'Google\\Cloud\\ContainerAnalysis\\' => 
+        'Google\\Cloud\\ContainerAnalysis\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ContainerAnalysis/src',
         ),
-        'Google\\Cloud\\ContactCenterInsights\\' => 
+        'Google\\Cloud\\ContactCenterInsights\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ContactCenterInsights/src',
         ),
-        'Google\\Cloud\\Config\\' => 
+        'Google\\Cloud\\Config\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Config/src',
         ),
-        'Google\\Cloud\\ConfidentialComputing\\' => 
+        'Google\\Cloud\\ConfidentialComputing\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ConfidentialComputing/src',
         ),
-        'Google\\Cloud\\Compute\\' => 
+        'Google\\Cloud\\Compute\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Compute/src',
         ),
-        'Google\\Cloud\\Commerce\\Consumer\\Procurement\\' => 
+        'Google\\Cloud\\Commerce\\Consumer\\Procurement\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommerceConsumerProcurement/src',
         ),
-        'Google\\Cloud\\CloudQuotas\\' => 
+        'Google\\Cloud\\CloudQuotas\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Quotas/src',
         ),
-        'Google\\Cloud\\CloudDms\\' => 
+        'Google\\Cloud\\CloudDms\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dms/src',
         ),
-        'Google\\Cloud\\CloudControlsPartner\\' => 
+        'Google\\Cloud\\CloudControlsPartner\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ControlsPartner/src',
         ),
-        'Google\\Cloud\\Channel\\' => 
+        'Google\\Cloud\\Channel\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Channel/src',
         ),
-        'Google\\Cloud\\CertificateManager\\' => 
+        'Google\\Cloud\\CertificateManager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CertificateManager/src',
         ),
-        'Google\\Cloud\\Build\\' => 
+        'Google\\Cloud\\Build\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Build/src',
         ),
-        'Google\\Cloud\\BinaryAuthorization\\' => 
+        'Google\\Cloud\\BinaryAuthorization\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BinaryAuthorization/src',
         ),
-        'Google\\Cloud\\Billing\\Budgets\\' => 
+        'Google\\Cloud\\Billing\\Budgets\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BillingBudgets/src',
         ),
-        'Google\\Cloud\\Billing\\' => 
+        'Google\\Cloud\\Billing\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Billing/src',
         ),
-        'Google\\Cloud\\Bigtable\\' => 
+        'Google\\Cloud\\Bigtable\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Bigtable/src',
         ),
-        'Google\\Cloud\\BigQuery\\Storage\\' => 
+        'Google\\Cloud\\BigQuery\\Storage\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryStorage/src',
         ),
-        'Google\\Cloud\\BigQuery\\Reservation\\' => 
+        'Google\\Cloud\\BigQuery\\Reservation\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryReservation/src',
         ),
-        'Google\\Cloud\\BigQuery\\Migration\\' => 
+        'Google\\Cloud\\BigQuery\\Migration\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryMigration/src',
         ),
-        'Google\\Cloud\\BigQuery\\DataTransfer\\' => 
+        'Google\\Cloud\\BigQuery\\DataTransfer\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryDataTransfer/src',
         ),
-        'Google\\Cloud\\BigQuery\\DataPolicies\\' => 
+        'Google\\Cloud\\BigQuery\\DataPolicies\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryDataPolicies/src',
         ),
-        'Google\\Cloud\\BigQuery\\DataExchange\\' => 
+        'Google\\Cloud\\BigQuery\\DataExchange\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryDataExchange/src',
         ),
-        'Google\\Cloud\\BigQuery\\Connection\\' => 
+        'Google\\Cloud\\BigQuery\\Connection\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryConnection/src',
         ),
-        'Google\\Cloud\\BigQuery\\AnalyticsHub\\' => 
+        'Google\\Cloud\\BigQuery\\AnalyticsHub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryAnalyticsHub/src',
         ),
-        'Google\\Cloud\\BigQuery\\' => 
+        'Google\\Cloud\\BigQuery\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQuery/src',
         ),
-        'Google\\Cloud\\BeyondCorp\\ClientGateways\\' => 
+        'Google\\Cloud\\BeyondCorp\\ClientGateways\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpClientGateways/src',
         ),
-        'Google\\Cloud\\BeyondCorp\\ClientConnectorServices\\' => 
+        'Google\\Cloud\\BeyondCorp\\ClientConnectorServices\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpClientConnectorServices/src',
         ),
-        'Google\\Cloud\\BeyondCorp\\AppGateways\\' => 
+        'Google\\Cloud\\BeyondCorp\\AppGateways\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpAppGateways/src',
         ),
-        'Google\\Cloud\\BeyondCorp\\AppConnectors\\' => 
+        'Google\\Cloud\\BeyondCorp\\AppConnectors\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpAppConnectors/src',
         ),
-        'Google\\Cloud\\BeyondCorp\\AppConnections\\' => 
+        'Google\\Cloud\\BeyondCorp\\AppConnections\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpAppConnections/src',
         ),
-        'Google\\Cloud\\Batch\\' => 
+        'Google\\Cloud\\Batch\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Batch/src',
         ),
-        'Google\\Cloud\\BareMetalSolution\\' => 
+        'Google\\Cloud\\BareMetalSolution\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BareMetalSolution/src',
         ),
-        'Google\\Cloud\\BackupDR\\' => 
+        'Google\\Cloud\\BackupDR\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BackupDr/src',
         ),
-        'Google\\Cloud\\AutoMl\\' => 
+        'Google\\Cloud\\AutoMl\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AutoMl/src',
         ),
-        'Google\\Cloud\\AssuredWorkloads\\' => 
+        'Google\\Cloud\\AssuredWorkloads\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AssuredWorkloads/src',
         ),
-        'Google\\Cloud\\Asset\\' => 
+        'Google\\Cloud\\Asset\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Asset/src',
         ),
-        'Google\\Cloud\\ArtifactRegistry\\' => 
+        'Google\\Cloud\\ArtifactRegistry\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ArtifactRegistry/src',
         ),
-        'Google\\Cloud\\AppHub\\' => 
+        'Google\\Cloud\\AppHub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppHub/src',
         ),
-        'Google\\Cloud\\AppEngine\\' => 
+        'Google\\Cloud\\AppEngine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppEngineAdmin/src',
         ),
-        'Google\\Cloud\\ApigeeRegistry\\' => 
+        'Google\\Cloud\\ApigeeRegistry\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApigeeRegistry/src',
         ),
-        'Google\\Cloud\\ApigeeConnect\\' => 
+        'Google\\Cloud\\ApigeeConnect\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApigeeConnect/src',
         ),
-        'Google\\Cloud\\ApiKeys\\' => 
+        'Google\\Cloud\\ApiKeys\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApiKeys/src',
         ),
-        'Google\\Cloud\\ApiHub\\' => 
+        'Google\\Cloud\\ApiHub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApiHub/src',
         ),
-        'Google\\Cloud\\ApiGateway\\' => 
+        'Google\\Cloud\\ApiGateway\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApiGateway/src',
         ),
-        'Google\\Cloud\\AlloyDb\\' => 
+        'Google\\Cloud\\AlloyDb\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AlloyDb/src',
         ),
-        'Google\\Cloud\\AdvisoryNotifications\\' => 
+        'Google\\Cloud\\AdvisoryNotifications\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AdvisoryNotifications/src',
         ),
-        'Google\\Cloud\\AccessApproval\\' => 
+        'Google\\Cloud\\AccessApproval\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AccessApproval/src',
         ),
-        'Google\\Cloud\\AIPlatform\\' => 
+        'Google\\Cloud\\AIPlatform\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AiPlatform/src',
         ),
-        'Google\\Cloud\\' => 
+        'Google\\Cloud\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CloudCommonProtos/src',
             1 => __DIR__ . '/..' . '/google/cloud/CommonProtos/src/Cloud',
         ),
-        'Google\\Auth\\' => 
+        'Google\\Auth\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/auth/src',
         ),
-        'Google\\Apps\\Script\\Type\\' => 
+        'Google\\Apps\\Script\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GSuiteAddOns/external/protos',
         ),
-        'Google\\Apps\\Meet\\' => 
+        'Google\\Apps\\Meet\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppsMeet/src',
         ),
-        'Google\\Apps\\Events\\Subscriptions\\' => 
+        'Google\\Apps\\Events\\Subscriptions\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppsEventsSubscriptions/src',
         ),
-        'Google\\Apps\\Chat\\' => 
+        'Google\\Apps\\Chat\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppsChat/src/Chat',
         ),
-        'Google\\Apps\\Card\\' => 
+        'Google\\Apps\\Card\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppsChat/src/Card',
         ),
-        'Google\\Api\\' => 
+        'Google\\Api\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommonProtos/src/Api',
         ),
-        'Google\\ApiCore\\LongRunning\\' => 
+        'Google\\ApiCore\\LongRunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/LongRunning/src/ApiCore/LongRunning',
         ),
-        'Google\\ApiCore\\' => 
+        'Google\\ApiCore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/gax/src',
         ),
-        'Google\\Analytics\\Data\\' => 
+        'Google\\Analytics\\Data\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AnalyticsData/src',
         ),
-        'Google\\Analytics\\Admin\\' => 
+        'Google\\Analytics\\Admin\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AnalyticsAdmin/src',
         ),
-        'Google\\Ads\\MarketingPlatform\\Admin\\' => 
+        'Google\\Ads\\MarketingPlatform\\Admin\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AdsMarketingPlatformAdmin/src',
         ),
-        'Google\\' => 
+        'Google\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/apiclient/src',
         ),
-        'GPBMetadata\\Grafeas\\' => 
+        'GPBMetadata\\Grafeas\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Grafeas/metadata',
         ),
-        'GPBMetadata\\Google\\Type\\' => 
+        'GPBMetadata\\Google\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommonProtos/metadata/Type',
         ),
-        'GPBMetadata\\Google\\Storagetransfer\\' => 
+        'GPBMetadata\\Google\\Storagetransfer\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/StorageTransfer/metadata',
         ),
-        'GPBMetadata\\Google\\Storage\\Control\\' => 
+        'GPBMetadata\\Google\\Storage\\Control\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/StorageControl/metadata',
         ),
-        'GPBMetadata\\Google\\Spanner\\' => 
+        'GPBMetadata\\Google\\Spanner\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Spanner/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Type\\' => 
+        'GPBMetadata\\Google\\Shopping\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingCommonProtos/metadata/Type',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Reports\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Reports\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantReports/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Quota\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Quota\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantQuota/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Promotions\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Promotions\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantPromotions/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Products\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Products\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantProducts/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Notifications\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Notifications\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantNotifications/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Lfp\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Lfp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantLfp/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Inventories\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Inventories\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantInventories/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Datasources\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Datasources\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantDataSources/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Conversions\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Conversions\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantConversions/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Merchant\\Accounts\\' => 
+        'GPBMetadata\\Google\\Shopping\\Merchant\\Accounts\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingMerchantAccounts/metadata',
         ),
-        'GPBMetadata\\Google\\Shopping\\Css\\' => 
+        'GPBMetadata\\Google\\Shopping\\Css\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ShoppingCss/metadata',
         ),
-        'GPBMetadata\\Google\\Rpc\\' => 
+        'GPBMetadata\\Google\\Rpc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CloudCommonProtos/metadata/Rpc',
             1 => __DIR__ . '/..' . '/google/cloud/CommonProtos/metadata/Rpc',
         ),
-        'GPBMetadata\\Google\\Pubsub\\' => 
+        'GPBMetadata\\Google\\Pubsub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PubSub/metadata',
         ),
-        'GPBMetadata\\Google\\Protobuf\\' => 
+        'GPBMetadata\\Google\\Protobuf\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf',
         ),
-        'GPBMetadata\\Google\\Privacy\\Dlp\\' => 
+        'GPBMetadata\\Google\\Privacy\\Dlp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dlp/metadata',
         ),
-        'GPBMetadata\\Google\\Monitoring\\' => 
+        'GPBMetadata\\Google\\Monitoring\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Monitoring/metadata',
         ),
-        'GPBMetadata\\Google\\Marketingplatform\\Admin\\' => 
+        'GPBMetadata\\Google\\Marketingplatform\\Admin\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AdsMarketingPlatformAdmin/metadata',
         ),
-        'GPBMetadata\\Google\\Maps\\Routeoptimization\\' => 
+        'GPBMetadata\\Google\\Maps\\Routeoptimization\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MapsRouteOptimization/metadata',
         ),
-        'GPBMetadata\\Google\\Maps\\Fleetengine\\Delivery\\' => 
+        'GPBMetadata\\Google\\Maps\\Fleetengine\\Delivery\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MapsFleetEngineDelivery/metadata',
         ),
-        'GPBMetadata\\Google\\Maps\\Fleetengine\\' => 
+        'GPBMetadata\\Google\\Maps\\Fleetengine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MapsFleetEngine/metadata',
         ),
-        'GPBMetadata\\Google\\Longrunning\\' => 
+        'GPBMetadata\\Google\\Longrunning\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/LongRunning/metadata/Longrunning',
         ),
-        'GPBMetadata\\Google\\Logging\\' => 
+        'GPBMetadata\\Google\\Logging\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Logging/metadata',
             1 => __DIR__ . '/..' . '/google/cloud/CommonProtos/metadata/Logging',
         ),
-        'GPBMetadata\\Google\\Identity\\Accesscontextmanager\\' => 
+        'GPBMetadata\\Google\\Identity\\Accesscontextmanager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AccessContextManager/metadata',
         ),
-        'GPBMetadata\\Google\\Iam\\Credentials\\' => 
+        'GPBMetadata\\Google\\Iam\\Credentials\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/IamCredentials/metadata',
         ),
-        'GPBMetadata\\Google\\Iam\\' => 
+        'GPBMetadata\\Google\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Iam/metadata',
             1 => __DIR__ . '/..' . '/google/cloud/CommonProtos/metadata/Iam',
         ),
-        'GPBMetadata\\Google\\Geo\\' => 
+        'GPBMetadata\\Google\\Geo\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GeoCommonProtos/metadata',
         ),
-        'GPBMetadata\\Google\\Firestore\\' => 
+        'GPBMetadata\\Google\\Firestore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Firestore/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\Containeranalysis\\' => 
+        'GPBMetadata\\Google\\Devtools\\Containeranalysis\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ContainerAnalysis/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\Cloudtrace\\' => 
+        'GPBMetadata\\Google\\Devtools\\Cloudtrace\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Trace/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\Cloudprofiler\\' => 
+        'GPBMetadata\\Google\\Devtools\\Cloudprofiler\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Profiler/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\Clouderrorreporting\\' => 
+        'GPBMetadata\\Google\\Devtools\\Clouderrorreporting\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ErrorReporting/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\Clouddebugger\\' => 
+        'GPBMetadata\\Google\\Devtools\\Clouddebugger\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Debugger/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\Cloudbuild\\' => 
+        'GPBMetadata\\Google\\Devtools\\Cloudbuild\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Build/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\Build\\' => 
+        'GPBMetadata\\Google\\Devtools\\Build\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Build/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\Artifactregistry\\' => 
+        'GPBMetadata\\Google\\Devtools\\Artifactregistry\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ArtifactRegistry/metadata',
         ),
-        'GPBMetadata\\Google\\Devtools\\' => 
+        'GPBMetadata\\Google\\Devtools\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CloudCommonProtos/metadata/Devtools',
         ),
-        'GPBMetadata\\Google\\Datastore\\Admin\\' => 
+        'GPBMetadata\\Google\\Datastore\\Admin\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DatastoreAdmin/metadata',
         ),
-        'GPBMetadata\\Google\\Datastore\\' => 
+        'GPBMetadata\\Google\\Datastore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Datastore/metadata',
         ),
-        'GPBMetadata\\Google\\Dataflow\\' => 
+        'GPBMetadata\\Google\\Dataflow\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dataflow/metadata',
         ),
-        'GPBMetadata\\Google\\Container\\' => 
+        'GPBMetadata\\Google\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Container/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Workflows\\' => 
+        'GPBMetadata\\Google\\Cloud\\Workflows\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Workflows/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Websecurityscanner\\' => 
+        'GPBMetadata\\Google\\Cloud\\Websecurityscanner\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/WebSecurityScanner/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Webrisk\\' => 
+        'GPBMetadata\\Google\\Cloud\\Webrisk\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/WebRisk/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Vpcaccess\\' => 
+        'GPBMetadata\\Google\\Cloud\\Vpcaccess\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VpcAccess/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Vmwareengine\\' => 
+        'GPBMetadata\\Google\\Cloud\\Vmwareengine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VmwareEngine/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Vmmigration\\' => 
+        'GPBMetadata\\Google\\Cloud\\Vmmigration\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VmMigration/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Vision\\' => 
+        'GPBMetadata\\Google\\Cloud\\Vision\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Vision/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Videointelligence\\' => 
+        'GPBMetadata\\Google\\Cloud\\Videointelligence\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VideoIntelligence/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Video\\Transcoder\\' => 
+        'GPBMetadata\\Google\\Cloud\\Video\\Transcoder\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VideoTranscoder/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Video\\Stitcher\\' => 
+        'GPBMetadata\\Google\\Cloud\\Video\\Stitcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VideoStitcher/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Video\\Livestream\\' => 
+        'GPBMetadata\\Google\\Cloud\\Video\\Livestream\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/VideoLiveStream/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Translate\\' => 
+        'GPBMetadata\\Google\\Cloud\\Translate\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Translate/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Tpu\\' => 
+        'GPBMetadata\\Google\\Cloud\\Tpu\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Tpu/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Texttospeech\\' => 
+        'GPBMetadata\\Google\\Cloud\\Texttospeech\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/TextToSpeech/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Telcoautomation\\' => 
+        'GPBMetadata\\Google\\Cloud\\Telcoautomation\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/TelcoAutomation/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Tasks\\' => 
+        'GPBMetadata\\Google\\Cloud\\Tasks\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Tasks/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Talent\\' => 
+        'GPBMetadata\\Google\\Cloud\\Talent\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Talent/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Support\\' => 
+        'GPBMetadata\\Google\\Cloud\\Support\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Support/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Storageinsights\\' => 
+        'GPBMetadata\\Google\\Cloud\\Storageinsights\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/StorageInsights/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Sql\\' => 
+        'GPBMetadata\\Google\\Cloud\\Sql\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SqlAdmin/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Speech\\' => 
+        'GPBMetadata\\Google\\Cloud\\Speech\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Speech/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Shell\\' => 
+        'GPBMetadata\\Google\\Cloud\\Shell\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Shell/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Servicehealth\\' => 
+        'GPBMetadata\\Google\\Cloud\\Servicehealth\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceHealth/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Servicedirectory\\' => 
+        'GPBMetadata\\Google\\Cloud\\Servicedirectory\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceDirectory/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Securitycentermanagement\\' => 
+        'GPBMetadata\\Google\\Cloud\\Securitycentermanagement\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecurityCenterManagement/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Securitycenter\\' => 
+        'GPBMetadata\\Google\\Cloud\\Securitycenter\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecurityCenter/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Security\\Publicca\\' => 
+        'GPBMetadata\\Google\\Cloud\\Security\\Publicca\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecurityPublicCA/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Security\\Privateca\\' => 
+        'GPBMetadata\\Google\\Cloud\\Security\\Privateca\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecurityPrivateCa/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Securesourcemanager\\' => 
+        'GPBMetadata\\Google\\Cloud\\Securesourcemanager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecureSourceManager/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Secrets\\' => 
+        'GPBMetadata\\Google\\Cloud\\Secrets\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecretManager/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Secretmanager\\' => 
+        'GPBMetadata\\Google\\Cloud\\Secretmanager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/SecretManager/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Scheduler\\' => 
+        'GPBMetadata\\Google\\Cloud\\Scheduler\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Scheduler/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Run\\' => 
+        'GPBMetadata\\Google\\Cloud\\Run\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Run/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Retail\\' => 
+        'GPBMetadata\\Google\\Cloud\\Retail\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Retail/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Resourcesettings\\' => 
+        'GPBMetadata\\Google\\Cloud\\Resourcesettings\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ResourceSettings/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Resourcemanager\\' => 
+        'GPBMetadata\\Google\\Cloud\\Resourcemanager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ResourceManager/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Redis\\Cluster\\' => 
+        'GPBMetadata\\Google\\Cloud\\Redis\\Cluster\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/RedisCluster/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Redis\\' => 
+        'GPBMetadata\\Google\\Cloud\\Redis\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Redis/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Recommender\\' => 
+        'GPBMetadata\\Google\\Cloud\\Recommender\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Recommender/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Recommendationengine\\' => 
+        'GPBMetadata\\Google\\Cloud\\Recommendationengine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/RecommendationEngine/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Recaptchaenterprise\\' => 
+        'GPBMetadata\\Google\\Cloud\\Recaptchaenterprise\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/RecaptchaEnterprise/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Rapidmigrationassessment\\' => 
+        'GPBMetadata\\Google\\Cloud\\Rapidmigrationassessment\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/RapidMigrationAssessment/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Privilegedaccessmanager\\' => 
+        'GPBMetadata\\Google\\Cloud\\Privilegedaccessmanager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PrivilegedAccessManager/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Privatecatalog\\' => 
+        'GPBMetadata\\Google\\Cloud\\Privatecatalog\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PrivateCatalog/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Policytroubleshooter\\Iam\\' => 
+        'GPBMetadata\\Google\\Cloud\\Policytroubleshooter\\Iam\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PolicyTroubleshooterIam/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Policytroubleshooter\\' => 
+        'GPBMetadata\\Google\\Cloud\\Policytroubleshooter\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PolicyTroubleshooter/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Policysimulator\\' => 
+        'GPBMetadata\\Google\\Cloud\\Policysimulator\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/PolicySimulator/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Parallelstore\\' => 
+        'GPBMetadata\\Google\\Cloud\\Parallelstore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Parallelstore/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Oslogin\\' => 
+        'GPBMetadata\\Google\\Cloud\\Oslogin\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OsLogin/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Osconfig\\' => 
+        'GPBMetadata\\Google\\Cloud\\Osconfig\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OsConfig/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Orgpolicy\\' => 
+        'GPBMetadata\\Google\\Cloud\\Orgpolicy\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OrgPolicy/metadata',
             1 => __DIR__ . '/..' . '/google/cloud/Asset/external/metadata/Cloud/Orgpolicy',
         ),
-        'GPBMetadata\\Google\\Cloud\\Orchestration\\Airflow\\Service\\' => 
+        'GPBMetadata\\Google\\Cloud\\Orchestration\\Airflow\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OrchestrationAirflow/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Oracledatabase\\' => 
+        'GPBMetadata\\Google\\Cloud\\Oracledatabase\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/OracleDatabase/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Optimization\\' => 
+        'GPBMetadata\\Google\\Cloud\\Optimization\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Optimization/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Notebooks\\' => 
+        'GPBMetadata\\Google\\Cloud\\Notebooks\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Notebooks/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Networkservices\\' => 
+        'GPBMetadata\\Google\\Cloud\\Networkservices\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetworkServices/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Networksecurity\\' => 
+        'GPBMetadata\\Google\\Cloud\\Networksecurity\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetworkSecurity/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Networkmanagement\\' => 
+        'GPBMetadata\\Google\\Cloud\\Networkmanagement\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetworkManagement/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Networkconnectivity\\' => 
+        'GPBMetadata\\Google\\Cloud\\Networkconnectivity\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetworkConnectivity/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Netapp\\' => 
+        'GPBMetadata\\Google\\Cloud\\Netapp\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/NetApp/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Migrationcenter\\' => 
+        'GPBMetadata\\Google\\Cloud\\Migrationcenter\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MigrationCenter/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Metastore\\' => 
+        'GPBMetadata\\Google\\Cloud\\Metastore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataprocMetastore/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Memcache\\' => 
+        'GPBMetadata\\Google\\Cloud\\Memcache\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Memcache/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Mediatranslation\\' => 
+        'GPBMetadata\\Google\\Cloud\\Mediatranslation\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/MediaTranslation/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Managedkafka\\' => 
+        'GPBMetadata\\Google\\Cloud\\Managedkafka\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ManagedKafka/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Managedidentities\\' => 
+        'GPBMetadata\\Google\\Cloud\\Managedidentities\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ManagedIdentities/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Lifesciences\\' => 
+        'GPBMetadata\\Google\\Cloud\\Lifesciences\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/LifeSciences/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Language\\' => 
+        'GPBMetadata\\Google\\Cloud\\Language\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Language/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Kms\\Inventory\\' => 
+        'GPBMetadata\\Google\\Cloud\\Kms\\Inventory\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/KmsInventory/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Kms\\' => 
+        'GPBMetadata\\Google\\Cloud\\Kms\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Kms/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Ids\\' => 
+        'GPBMetadata\\Google\\Cloud\\Ids\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Ids/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Iap\\' => 
+        'GPBMetadata\\Google\\Cloud\\Iap\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Iap/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Gsuiteaddons\\' => 
+        'GPBMetadata\\Google\\Cloud\\Gsuiteaddons\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GSuiteAddOns/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Gkemulticloud\\' => 
+        'GPBMetadata\\Google\\Cloud\\Gkemulticloud\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GkeMultiCloud/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Gkehub\\' => 
+        'GPBMetadata\\Google\\Cloud\\Gkehub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GkeHub/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Gkeconnect\\Gateway\\' => 
+        'GPBMetadata\\Google\\Cloud\\Gkeconnect\\Gateway\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GkeConnectGateway/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Gkebackup\\' => 
+        'GPBMetadata\\Google\\Cloud\\Gkebackup\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GkeBackup/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Functions\\' => 
+        'GPBMetadata\\Google\\Cloud\\Functions\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Functions/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Filestore\\' => 
+        'GPBMetadata\\Google\\Cloud\\Filestore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Filestore/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Eventarc\\Publishing\\' => 
+        'GPBMetadata\\Google\\Cloud\\Eventarc\\Publishing\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/EventarcPublishing/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Eventarc\\' => 
+        'GPBMetadata\\Google\\Cloud\\Eventarc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Eventarc/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Essentialcontacts\\' => 
+        'GPBMetadata\\Google\\Cloud\\Essentialcontacts\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/EssentialContacts/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Edgenetwork\\' => 
+        'GPBMetadata\\Google\\Cloud\\Edgenetwork\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/EdgeNetwork/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Domains\\' => 
+        'GPBMetadata\\Google\\Cloud\\Domains\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Domains/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Documentai\\' => 
+        'GPBMetadata\\Google\\Cloud\\Documentai\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DocumentAi/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Discoveryengine\\' => 
+        'GPBMetadata\\Google\\Cloud\\Discoveryengine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DiscoveryEngine/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Dialogflow\\Cx\\' => 
+        'GPBMetadata\\Google\\Cloud\\Dialogflow\\Cx\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DialogflowCx/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Dialogflow\\' => 
+        'GPBMetadata\\Google\\Cloud\\Dialogflow\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dialogflow/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Developerconnect\\' => 
+        'GPBMetadata\\Google\\Cloud\\Developerconnect\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DeveloperConnect/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Deploy\\' => 
+        'GPBMetadata\\Google\\Cloud\\Deploy\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Deploy/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Datastream\\' => 
+        'GPBMetadata\\Google\\Cloud\\Datastream\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Datastream/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Dataproc\\' => 
+        'GPBMetadata\\Google\\Cloud\\Dataproc\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dataproc/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Dataplex\\' => 
+        'GPBMetadata\\Google\\Cloud\\Dataplex\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dataplex/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Datalabeling\\' => 
+        'GPBMetadata\\Google\\Cloud\\Datalabeling\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataLabeling/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Datafusion\\' => 
+        'GPBMetadata\\Google\\Cloud\\Datafusion\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataFusion/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Dataform\\' => 
+        'GPBMetadata\\Google\\Cloud\\Dataform\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dataform/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Datacatalog\\Lineage\\' => 
+        'GPBMetadata\\Google\\Cloud\\Datacatalog\\Lineage\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataCatalogLineage/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Datacatalog\\' => 
+        'GPBMetadata\\Google\\Cloud\\Datacatalog\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/DataCatalog/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Contactcenterinsights\\' => 
+        'GPBMetadata\\Google\\Cloud\\Contactcenterinsights\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ContactCenterInsights/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Config\\' => 
+        'GPBMetadata\\Google\\Cloud\\Config\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Config/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Confidentialcomputing\\' => 
+        'GPBMetadata\\Google\\Cloud\\Confidentialcomputing\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ConfidentialComputing/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Compute\\' => 
+        'GPBMetadata\\Google\\Cloud\\Compute\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Compute/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Common\\' => 
+        'GPBMetadata\\Google\\Cloud\\Common\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CloudCommonProtos/metadata/Common',
         ),
-        'GPBMetadata\\Google\\Cloud\\Commerce\\Consumer\\Procurement\\' => 
+        'GPBMetadata\\Google\\Cloud\\Commerce\\Consumer\\Procurement\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommerceConsumerProcurement/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Clouddms\\' => 
+        'GPBMetadata\\Google\\Cloud\\Clouddms\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Dms/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Cloudcontrolspartner\\' => 
+        'GPBMetadata\\Google\\Cloud\\Cloudcontrolspartner\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ControlsPartner/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Channel\\' => 
+        'GPBMetadata\\Google\\Cloud\\Channel\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Channel/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Certificatemanager\\' => 
+        'GPBMetadata\\Google\\Cloud\\Certificatemanager\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CertificateManager/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Binaryauthorization\\' => 
+        'GPBMetadata\\Google\\Cloud\\Binaryauthorization\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BinaryAuthorization/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Billing\\Budgets\\' => 
+        'GPBMetadata\\Google\\Cloud\\Billing\\Budgets\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BillingBudgets/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Billing\\' => 
+        'GPBMetadata\\Google\\Cloud\\Billing\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Billing/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Bigquery\\Storage\\' => 
+        'GPBMetadata\\Google\\Cloud\\Bigquery\\Storage\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryStorage/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Bigquery\\Reservation\\' => 
+        'GPBMetadata\\Google\\Cloud\\Bigquery\\Reservation\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryReservation/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Bigquery\\Migration\\' => 
+        'GPBMetadata\\Google\\Cloud\\Bigquery\\Migration\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryMigration/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Bigquery\\Datatransfer\\' => 
+        'GPBMetadata\\Google\\Cloud\\Bigquery\\Datatransfer\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryDataTransfer/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Bigquery\\Datapolicies\\' => 
+        'GPBMetadata\\Google\\Cloud\\Bigquery\\Datapolicies\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryDataPolicies/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Bigquery\\Dataexchange\\' => 
+        'GPBMetadata\\Google\\Cloud\\Bigquery\\Dataexchange\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryDataExchange/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Bigquery\\Connection\\' => 
+        'GPBMetadata\\Google\\Cloud\\Bigquery\\Connection\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryConnection/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Bigquery\\Analyticshub\\' => 
+        'GPBMetadata\\Google\\Cloud\\Bigquery\\Analyticshub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BigQueryAnalyticsHub/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Clientgateways\\' => 
+        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Clientgateways\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpClientGateways/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Clientconnectorservices\\' => 
+        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Clientconnectorservices\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpClientConnectorServices/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Appgateways\\' => 
+        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Appgateways\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpAppGateways/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Appconnectors\\' => 
+        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Appconnectors\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpAppConnectors/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Appconnections\\' => 
+        'GPBMetadata\\Google\\Cloud\\Beyondcorp\\Appconnections\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BeyondCorpAppConnections/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Batch\\' => 
+        'GPBMetadata\\Google\\Cloud\\Batch\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Batch/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Baremetalsolution\\' => 
+        'GPBMetadata\\Google\\Cloud\\Baremetalsolution\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BareMetalSolution/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Backupdr\\' => 
+        'GPBMetadata\\Google\\Cloud\\Backupdr\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/BackupDr/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Automl\\' => 
+        'GPBMetadata\\Google\\Cloud\\Automl\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AutoMl/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Audit\\' => 
+        'GPBMetadata\\Google\\Cloud\\Audit\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CloudCommonProtos/metadata/Audit',
         ),
-        'GPBMetadata\\Google\\Cloud\\Assuredworkloads\\' => 
+        'GPBMetadata\\Google\\Cloud\\Assuredworkloads\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AssuredWorkloads/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Asset\\' => 
+        'GPBMetadata\\Google\\Cloud\\Asset\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Asset/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Apphub\\' => 
+        'GPBMetadata\\Google\\Cloud\\Apphub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppHub/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Apihub\\' => 
+        'GPBMetadata\\Google\\Cloud\\Apihub\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApiHub/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Apigeeregistry\\' => 
+        'GPBMetadata\\Google\\Cloud\\Apigeeregistry\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApigeeRegistry/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Apigeeconnect\\' => 
+        'GPBMetadata\\Google\\Cloud\\Apigeeconnect\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApigeeConnect/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Apigateway\\' => 
+        'GPBMetadata\\Google\\Cloud\\Apigateway\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApiGateway/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Alloydb\\' => 
+        'GPBMetadata\\Google\\Cloud\\Alloydb\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AlloyDb/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Aiplatform\\' => 
+        'GPBMetadata\\Google\\Cloud\\Aiplatform\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AiPlatform/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Advisorynotifications\\' => 
+        'GPBMetadata\\Google\\Cloud\\Advisorynotifications\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AdvisoryNotifications/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\Accessapproval\\' => 
+        'GPBMetadata\\Google\\Cloud\\Accessapproval\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AccessApproval/metadata',
         ),
-        'GPBMetadata\\Google\\Cloud\\' => 
+        'GPBMetadata\\Google\\Cloud\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommonProtos/metadata/Cloud',
         ),
-        'GPBMetadata\\Google\\Chat\\' => 
+        'GPBMetadata\\Google\\Chat\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppsChat/metadata/Chat',
         ),
-        'GPBMetadata\\Google\\Bigtable\\' => 
+        'GPBMetadata\\Google\\Bigtable\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Bigtable/metadata',
         ),
-        'GPBMetadata\\Google\\Apps\\Script\\Type\\' => 
+        'GPBMetadata\\Google\\Apps\\Script\\Type\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/GSuiteAddOns/external/metadata',
         ),
-        'GPBMetadata\\Google\\Apps\\Meet\\' => 
+        'GPBMetadata\\Google\\Apps\\Meet\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppsMeet/metadata',
         ),
-        'GPBMetadata\\Google\\Apps\\Events\\Subscriptions\\' => 
+        'GPBMetadata\\Google\\Apps\\Events\\Subscriptions\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppsEventsSubscriptions/metadata',
         ),
-        'GPBMetadata\\Google\\Apps\\Card\\' => 
+        'GPBMetadata\\Google\\Apps\\Card\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppsChat/metadata/Card',
         ),
-        'GPBMetadata\\Google\\Appengine\\' => 
+        'GPBMetadata\\Google\\Appengine\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AppEngineAdmin/metadata',
         ),
-        'GPBMetadata\\Google\\Api\\Serviceusage\\' => 
+        'GPBMetadata\\Google\\Api\\Serviceusage\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceUsage/metadata',
         ),
-        'GPBMetadata\\Google\\Api\\Servicemanagement\\' => 
+        'GPBMetadata\\Google\\Api\\Servicemanagement\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceManagement/metadata',
         ),
-        'GPBMetadata\\Google\\Api\\Servicecontrol\\' => 
+        'GPBMetadata\\Google\\Api\\Servicecontrol\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ServiceControl/metadata',
         ),
-        'GPBMetadata\\Google\\Api\\Cloudquotas\\' => 
+        'GPBMetadata\\Google\\Api\\Cloudquotas\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/Quotas/metadata',
         ),
-        'GPBMetadata\\Google\\Api\\Apikeys\\' => 
+        'GPBMetadata\\Google\\Api\\Apikeys\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/ApiKeys/metadata',
         ),
-        'GPBMetadata\\Google\\Api\\' => 
+        'GPBMetadata\\Google\\Api\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/CommonProtos/metadata/Api',
         ),
-        'GPBMetadata\\Google\\Analytics\\Data\\' => 
+        'GPBMetadata\\Google\\Analytics\\Data\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AnalyticsData/metadata',
         ),
-        'GPBMetadata\\Google\\Analytics\\Admin\\' => 
+        'GPBMetadata\\Google\\Analytics\\Admin\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/cloud/AnalyticsAdmin/metadata',
         ),
-        'GPBMetadata\\ApiCore\\' => 
+        'GPBMetadata\\ApiCore\\' =>
         array (
             0 => __DIR__ . '/..' . '/google/gax/metadata/ApiCore',
         ),
-        'Firebase\\JWT\\' => 
+        'Firebase\\JWT\\' =>
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
-        'Brick\\Math\\' => 
+        'Brick\\Math\\' =>
         array (
             0 => __DIR__ . '/..' . '/brick/math/src',
         ),
